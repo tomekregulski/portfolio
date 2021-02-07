@@ -12,7 +12,7 @@ For this assignment I created my own portfolio site that includes a clear title 
 
 At the moment, the entire work section is filled with placeholders, as I do not have any completed apps at the moment. I will update this page as I progress through the course, adding new projects as they are completed. 
 
-This page has been deployed on Github as a work-in-progress, and can be viewed here: https://tomekregulski.github.io/hw_01/
+This page has been deployed on Github as a work-in-progress, and can be viewed here: https://tomekregulski.github.io/portfolio/
 
 # What I Learned
 
