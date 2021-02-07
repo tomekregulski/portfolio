@@ -6,9 +6,6 @@ Columbia Coding Boot Camp - Homework 02 - Portfolio
 * [Installation and Usage](#installation-and-usa)
 * [License](#license)
 
-![homepage main](assets/images/demo1.png)
-![homepage main](assets/images/demo2.png)
-
 # Description
 
 For this assignment I created my own portfolio site that includes a clear title and functional navbar, a recent photo, brief bio, portfolio of my work with links to deployed apps, and contact info. 
