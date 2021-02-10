@@ -34,7 +34,7 @@ h1 {
     background: linear-gradient(to bottom right, rgba(82, 195, 199, 1), rgba(104, 176, 179, .5));
     opacity: 0.66;
     margin: 0;
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 10px 10px;
     text-align: center;
 }
 
@@ -258,8 +258,8 @@ nav ul li {
 
     h1 {
         display: inline-block;
-        background: linear-gradient(to right,rgba(82, 195, 199, 1), rgba(104, 176, 179, .5));
-        padding: 10px 10px 10px 50px;
+        background: linear-gradient(to right,rgba(82, 195, 199, 1), rgba(104, 176, 179, 0));
+        padding: 10px 250px 10px 50px;
         text-align: left;
     }
 
