@@ -6,9 +6,10 @@
 
 * {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-size: 16px; */
 }
 
-a {
+nav a, #contact-me a {
     color: var(--header-secondary);
     font-size: 1.5em;
     font-weight: 400;
@@ -51,7 +52,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
 }
 
 nav ul li {
@@ -77,7 +77,8 @@ nav ul li {
     color: #fff;
 } */
 
-.subtitle {
+/* .subtitle {
+    display: none;
     padding: 15px 20px;
     font-size: 1.5em;
     color: #26292b;
@@ -91,11 +92,12 @@ nav ul li {
     left: 25%;
     height: 50px;
     width: 300px;
-}
+} */
 
-.banner-extension {
-    height: 100px;
-}
+/* .banner-extension {
+    height: 20px;
+    margin-bottom: 3%
+} */
 
 /*--------------------------------------*/
 /*----------------Side------------------*/
@@ -109,8 +111,8 @@ nav ul li {
     font-size: 2em;
     font-weight: 600;
     border-bottom: solid 5px var(--header-secondary);
-    box-sizing: border-box;
-    margin: 0 5%;
+    border-top: solid 5px var(--header-secondary);
+    margin: 3% 5%;
 }
 
 .side-text {
@@ -120,6 +122,11 @@ nav ul li {
 
 /*--------------------------------------*/
 /*----------------About-----------------*/
+
+#about-me {
+    display: flex;
+    flex-direction: column;
+}
 
 .about-body {
     background-color: var(--main-bg);
@@ -131,14 +138,10 @@ nav ul li {
 
 .about-body img {
     max-height: 250px;
-    display: inline-block;
+    display: inline;
     margin-right: 2%;
     align-self: center;
     margin-bottom: 3%;
-}
-
-#about-me {
-    flex-direction: column;
 }
 
 .about-text {
@@ -149,66 +152,15 @@ nav ul li {
 }
 
 .about-text p {
-    margin: 1%;
+    margin: 2%;
     text-align: center;
-}
-
-/*--------------------------------------*/
-/*----------------Work-----------------*/
-
-#work {
-    flex-direction: column;
-}
-
-.work-body {
-    background-color: var(--main-bg);
-    flex: 5;
-    padding: 25px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1% 6%;
-}
-
-.project-container {
-    position: relative;
-}
-
-.work-body img {
-    max-width: 100%;
-    border: solid 5px var(--header-secondary);
-    position: relative;
-}
-
-.work-body img:hover {
-    opacity: .75;
-    transition-duration: .5s;
-    cursor: pointer;
-}
-
-.project-label {
-    color: #26292b;
-    background: var(--header-secondary);
-    position: absolute;
-    bottom: 15%;
-    padding: 1% 5% 1% 1.5%;
-    z-index: 1;
-}
-
-.project-title{
-    font-size: 1.5em;
-}
-
-.project-desc{
-    font-size: .8em;
-    padding: 10% 0 0 0;
-    font-weight: 200;
 }
 
 /*--------------------------------------*/
 /*----------------Contact---------------*/
 
 #contact-me {
+    display: flex;
     flex-direction: column;
 }
 
@@ -232,6 +184,9 @@ nav ul li {
 
 @media screen and (min-width: 880px) {
 
+/*--------------------------------------*/
+/*---------------Header-----------------*/
+
     h1 {
         display: block;
         background: linear-gradient(to right,rgba(82, 195, 199, 1), rgba(104, 176, 179, .5));
@@ -252,17 +207,24 @@ nav ul li {
     nav ul {
         list-style-type: none;
         flex-direction: row;
-        margin-top: 0;
     }
 
     nav ul li {
         margin-left: 25px;
     }
 
-    .subtitle {
+    /* .subtitle {
         top: 50px;
         left: 25px;
+    } */
+
+    .banner-extension {
+        height: 120px;
+        margin-bottom: 3%;
     }
+
+/*--------------------------------------*/
+/*----------------About-----------------*/
 
     .about-body {
         margin: 4% 0;
@@ -291,6 +253,9 @@ nav ul li {
 /* Desktop */
 @media screen and (min-width: 1200px) {
 
+/*--------------------------------------*/
+/*---------------Header-----------------*/
+
     h1 {
         display: inline-block;
         background: linear-gradient(to right,rgba(82, 195, 199, 1), rgba(104, 176, 179, .5));
@@ -310,25 +275,22 @@ nav ul li {
     nav ul {
         list-style-type: none;
         flex-direction: row;
-        margin-top: 0;
     }
     
     nav ul li {
         margin-left: 25px;
     }
 
-    .subtitle {
+    /* .subtitle {
         top: 100px;
         left: 150px;
         z-index: 2;
-    }
+    } */
 
-    .banner-extension {
-        height: 150px;
-    }
+/*--------------------------------------*/
+/*----------------About-----------------*/
 
     #about-me {
-        display: flex;
         flex-direction: row;
     }
 
@@ -340,6 +302,7 @@ nav ul li {
         padding-right: 1%;
         border-right: solid 5px var(--header-secondary);
         border-bottom: 0;
+        border-top: 0;
         box-sizing: border-box;
         margin: 1% 0;
     }
@@ -351,6 +314,7 @@ nav ul li {
     .about-body {
         padding: 25px 15px;
         flex-direction: row;
+        border: 0;
     }
 
     .about-body img {
@@ -361,43 +325,24 @@ nav ul li {
     .about-text {
         flex-direction: column;
         justify-content: center;
+        padding: 0;
+        margin: 0 5%;
     }
 
-    #work {
-        display: flex;
-        flex-direction: row;
+    .about-text p {
+        margin: 1%;
     }
 
-    .work-body {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin: 0;
-    }
+/*--------------------------------------*/
+/*----------------Work-----------------*/
 
-    .work-body img {
-        border: solid 5px var(--header-secondary);
-    }
-
-    .work-body img:hover {
-        opacity: .75;
-        transition-duration: .5s;
-        cursor: pointer;
-    }
-
-    .project-container {
-        width: 49.8%;
-    }
-
-    #top-project {
-        flex: 4 0 100%;
-    }
+/*--------------------------------------*/
+/*---------------Contact----------------*/
 
     #contact-me {
-        display: flex;
         flex-direction: row;
         align-items: center;
-        justify-items: center'
+        justify-items: center;
     }
 
     .contact-body {
