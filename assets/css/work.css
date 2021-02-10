@@ -69,18 +69,17 @@
         margin: 0;
         display: grid;
         grid-template-columns: 50% 50%;
+        grid-row-gap: 1px;
+        grid-column-gap: 4px;
     }
 
     #first-project {
         grid-column-start: 1;
         grid-column-end: 3;
+        justify-self: center;
     }
     .work-body img {
         border: solid 5px var(--header-secondary);
-    }
-
-    .other-project {
-        margin: 4%;
     }
 
     .work-body img:hover {
