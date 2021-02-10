@@ -18,6 +18,9 @@ a:visited {
     color: var(--header-secondary);
 }
 
+/*--------------------------------------*/
+/*---------------Header-----------------*/
+
 header {
     padding: 20px 0;
     background: linear-gradient(var(--header-primary), var(--main-bg));
@@ -54,23 +57,22 @@ nav ul li {
 }
 
 .subtitle {
-    display: inline-block;
-    padding: 5px;
-    box-sizing: border-box;
+    padding: 15px 20px;
     font-size: 1.5em;
     color: #26292b;
     background: linear-gradient(to bottom, rgba(82, 195, 199, .6), rgba(104, 176, 179, .3));
     opacity: 0.66;
     text-align: center;
-    position: relative;
-    bottom: -25%;
-    left: 53%;
-    z-index: 1;
+    position: absolute;
 }
 
 .banner-extension {
     height: 100px;
+    position: relative;
 }
+
+/*--------------------------------------*/
+/*----------------Side------------------*/
 
 .side {
     flex: 1;
@@ -89,6 +91,9 @@ nav ul li {
     display: flex;
     flex-direction: row;
 }
+
+/*--------------------------------------*/
+/*----------------About-----------------*/
 
 .about-body {
     background-color: var(--main-bg);
@@ -114,13 +119,16 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2%;
+    margin: 2% 10%;
 }
 
 .about-text p {
     margin: 1%;
     text-align: center;
 }
+
+/*--------------------------------------*/
+/*----------------Work-----------------*/
 
 #work {
     flex-direction: column;
@@ -133,11 +141,17 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1% 6%;
+}
+
+.project-container {
+    position: relative;
 }
 
 .work-body img {
     max-width: 100%;
     border: solid 5px var(--header-secondary);
+    position: relative;
 }
 
 .work-body img:hover {
@@ -146,14 +160,13 @@ nav ul li {
     cursor: pointer;
 }
 
-.project-text {
+.project-label {
     color: #26292b;
     background: var(--header-secondary);
-    position: relative;
-    bottom: 70px;
+    position: absolute;
+    bottom: 15%;
     padding: 1% 5% 1% 1.5%;
-    text-align: left;
-    display: inline-block;
+    z-index: 1;
 }
 
 .project-title{
@@ -165,6 +178,9 @@ nav ul li {
     padding: 10% 0 0 0;
     font-weight: 200;
 }
+
+/*--------------------------------------*/
+/*----------------Contact---------------*/
 
 #contact-me {
     flex-direction: column;
@@ -188,7 +204,63 @@ nav ul li {
     margin: 1% 0;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 880px) {
+
+    h1 {
+        display: block;
+        background: linear-gradient(to right,rgba(82, 195, 199, 1), rgba(104, 176, 179, .5));
+        padding: 10px 10px 10px 50px;
+        text-align: left;
+    }
+
+    nav {
+        display: block;
+        float: left;
+        font-size: 1em;
+        color: var(--header-secondary);
+        opacity: 0.66;
+        text-decoration: underline;
+        margin: 1% 2%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        margin-left: 25px;
+    }
+
+    .subtitle {
+    }
+
+    .about-body {
+        margin: 4% 0;
+        padding: 0 10%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .about-body img {
+        align-self: center;
+        margin-bottom: 3%;
+    }
+
+    .about-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
 
     h1 {
         display: inline-block;
@@ -216,8 +288,9 @@ nav ul li {
     }
 
     .subtitle {
-        bottom: -50%;
-        left: 75%;
+        bottom: 750px;
+        /* left: 150px; */
+        z-index: 2;
     }
 
     .banner-extension {
@@ -268,11 +341,11 @@ nav ul li {
     .work-body {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
+        margin: 0;
     }
 
     .work-body img {
-        max-width: 100%;
         border: solid 5px var(--header-secondary);
     }
 
@@ -282,24 +355,12 @@ nav ul li {
         cursor: pointer;
     }
 
-    .project-box {
-        width: 46%;
-        box-sizing: border-box;
-        margin: .5%;
-    }
-
-    #top-project-text {
-        color: #26292b;
-        background: var(--header-secondary);
-        position: relative;
-        bottom: 90px;
-        padding: 1% 5% 1% 1.5%;
-        text-align: left;
-        display: inline-block;
+    .project-container {
+        width: 49.8%;
     }
 
     #top-project {
-        align-self: stretch;
+        flex: 4 0 100%;
     }
 
     #contact-me {
@@ -329,3 +390,4 @@ nav ul li {
 
 }
 
+/* Tablet */
