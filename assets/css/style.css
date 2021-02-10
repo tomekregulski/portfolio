@@ -106,9 +106,20 @@ nav ul li {
     margin-bottom: 3%;
 }
 
-
 #about-me {
     flex-direction: column;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+}
+
+.about-text p {
+    margin: 1%;
+    text-align: center;
 }
 
 #work {
@@ -294,6 +305,8 @@ nav ul li {
     #contact-me {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-items: center'
     }
 
     .contact-body {
