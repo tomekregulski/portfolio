@@ -21,6 +21,11 @@ body {
     margin: 0 auto;
 } 
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 nav a, #contact-me a {
     color: var(--light-blue);
     font-size: 1.5em;
@@ -60,7 +65,6 @@ header {
 } 
 
 h1 {
-    display: block;
     font-size: 3em;
     font-weight: 200;
     color: var(--light-blue);
@@ -74,10 +78,11 @@ header span {
     font-weight: 100;
     text-transform: uppercase;
     margin-top: 3%;
+    text-align: center;
 }
 
 .position {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;   
     margin-top: 3%
@@ -89,43 +94,33 @@ nav {
     opacity: 0.66;
     margin-top: 2%;
     position: relative;
-}
-
-/* .burger {
-    display: block;
-    height: 40px;
-    width: 100%;
-    background: url(../images/burger.png) no-repeat 98% center;
-    cursor: pointer;
-} */
-
-#menu {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 25px 0 10px 0;
-}
-
-#menu li {
-    margin: 0 1% 0 1%;
-    font-size: .8em;
-    margin: 0 10px;
-}
-
-#menu li:hover {
-    color:rgb(45, 244, 78);
-}
-
-/* #menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-} */
+}
 
-/* #menu.open {
+.burger {
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--gray-text: #44474a);
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+}
+
+#menu.open {
     height: auto;
-} */
+}
+
+#menu li {
+    padding: 5px 0; 
+    text-align: right;
+}
 
 /*--------------------------------------*/
 /*----------------About-----------------*/
@@ -232,6 +227,38 @@ footer {
         width: 95%;
         margin: 0 auto;
     } 
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger {
+        display: none;
+        /* height: 0; */
+    }
+
+    #menu {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        margin: 25px 0 10px 0;
+    }
+
+    #menu li {
+        margin: 0 1% 0 1%;
+        font-size: .8em;
+        margin: 0 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 /*--------------------------------------*/
 /*----------------Work-----------------*/
