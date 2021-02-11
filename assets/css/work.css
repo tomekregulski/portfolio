@@ -81,21 +81,48 @@
 
 @media screen and (min-width: 880px) {
 
+    .work-body {
+        /* margin: 0; */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 4px;
+        grid-column-gap: 4px;
+    }
+
     .project-banner {
+        margin: 0;
         height: 175px;
     }
-}
 
+    #first-project {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: stretch;
+    }
+
+    .soon-big {
+        position: absolute;
+        font-size: 4em;
+        top: 50px;
+        left: 25%;
+    }
+
+    .soon {
+        position: absolute;
+        top: 75px;
+        left: 30%;
+    }
+}
 
 @media screen and (min-width: 1200px) {
 
 
-    #work {
+    /* #work {
         flex-direction: row;
-    }
+    } */
 
     .work-body {
-        margin: 0;
+        /* margin: 0; */
         display: grid;
         grid-template-columns: 50% 50%;
         grid-row-gap: 4px;
@@ -118,14 +145,12 @@
         font-size: 4em;
         top: 60px;
         left: 40%;
-
     }
 
     .soon {
         position: absolute;
         top: 90px;
         left: 35%;
-
     }
 
 }
