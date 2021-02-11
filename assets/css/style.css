@@ -35,6 +35,19 @@ p {
     color: var(--gray-text);
 }
 
+h2 {
+    display: block;
+    margin: 2% 0;
+    font-size: 2em;
+    font-weight: 600;
+    border-bottom: solid 5px var(--light-blue);
+    border-top: solid 5px var(--light-blue);
+    color: var(--gray-text);
+    padding: 15px;
+    margin: 3% 5%;
+    text-align: center;
+}
+
 /*--------------------------------------*/
 /*---------------Header-----------------*/
 
@@ -115,79 +128,94 @@ nav {
 } */
 
 /*--------------------------------------*/
-/*----------------Side------------------*/
-
-.side {
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 2em;
-    font-weight: 600;
-    border-bottom: solid 5px var(--light-blue);
-    border-top: solid 5px var(--light-blue);
-    margin: 3% 5%;
-}
-
-.side-text {
-    display: flex;
-    flex-direction: row;
-    margin: 2% 0;
-}
-
-.side span {
-color: var(--gray-text);
-}
-
-/*--------------------------------------*/
 /*----------------About-----------------*/
 
-#about-me {
-    display: flex;
-    flex-direction: column;
-}
-
 .about-body {
-    flex: 5;
-    padding: 25px 15px;
     display: flex;
     flex-direction: column;
 }
 
 .about-body img {
     max-height: 250px;
-    display: inline;
-    margin-right: 2%;
     align-self: center;
-    /* margin-bottom: 3%; */
     border: solid 3px var(--light-blue);
     border-radius: 50%;
 }
 
-.about-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2% 10% 0 10%;
+.about-text p {
+    margin: 5%;
+    text-align: center;
 }
 
-.about-text p {
-    margin: 2%;
-    text-align: center;
+/*--------------------------------------*/
+/*----------------Work-----------------*/
+
+.work-body {
+    margin: 1% 6%;
+}
+
+.project-container {
+    position: relative;
+}
+
+.project-label {
+    color: #26292b;
+    background: var(--light-blue);
+    position: absolute;
+    bottom: 15%;
+    padding: 1% 5% 1% 1.5%;
+    z-index: 1;
+}
+
+.project-banner {
+    max-width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom right, rgb(172, 82, 199), rgba(104, 78, 112, 0.5));
+    border: solid 2px var(--light-blue);
+    margin: 5px 0;
+    position: relative;
+}
+
+.soon-big {
+    color: var(--gray-text);
+    position: absolute;
+    top: 50px;
+    left: 27%;
+    font-size: 2em;
+    opacity: .75;
+}
+
+.soon {
+    color: var(--gray-text);
+    position: absolute;
+    top: 50px;
+    left: 27%;
+    font-size: 2em;
+    opacity: .75;
+}
+
+.project-banner:hover {
+    opacity: .75;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.project-title {
+    font-size: 1.5em;
+}
+
+.project-desc {
+    font-size: .8em;
+    padding: 10% 0 0 0;
+    font-weight: 200;
 }
 
 /*--------------------------------------*/
 /*----------------Contact---------------*/
 
-#contact-me {
-    display: flex;
-    flex-direction: column;
-}
-
 .social {
     display: flex;
     justify-content: center;
-
 }
 
 .social i {
@@ -205,6 +233,41 @@ footer {
         margin: 0 auto;
     } 
 
+/*--------------------------------------*/
+/*----------------Work-----------------*/
+
+    .work-body {
+        /* margin: 0; */
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 4px;
+        grid-column-gap: 4px;
+    }
+
+    .project-banner {
+        margin: 0;
+        height: 175px;
+    }
+
+    #first-project {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: stretch;
+    }
+
+    .soon-big {
+        position: absolute;
+        font-size: 4em;
+        top: 50px;
+        left: 22%;
+    }
+
+    .soon {
+        position: absolute;
+        top: 75px;
+        left: 22%;
+    }
+}
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
@@ -238,72 +301,59 @@ footer {
     }
 
     .about-text p {
-        width: 70%;
-        text-align: center;
+        margin: 2% 10%;
     }
-
-    /* #about-me {
-        flex-direction: row;
-    } */
-
-    /* .side {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-end;
-        text-align: right;
-        padding-right: 1%;
-        border-right: solid 5px var(--light-blue);
-        border-bottom: 0;
-        border-top: 0;
-        box-sizing: border-box;
-        margin: 1% 0;
-    } */
-
-    /* .side-text {
-        flex-direction: column;
-    } */
-
-    /* .about-body {
-        padding: 25px 15px;
-        flex-direction: row;
-        border: 0;
-    } */
-
-    /* .about-body img {
-        align-self: center;
-        margin-bottom: 3%;
-    } */
-/* 
-    .about-text {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        margin: 0 5%;
-    } */
-
-    /* .about-text p {
-        margin: 1%;
-    } */
 
 /*--------------------------------------*/
 /*----------------Work-----------------*/
 
+    .work-body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 4px;
+        grid-column-gap: 4px;
+    }
+
+    .project-banner {
+        margin: 0;
+        height: 200px;
+    }
+
+    #first-project {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: stretch;
+    }
+
+    .soon-big {
+        position: absolute;
+        font-size: 4em;
+        top: 60px;
+        left: 30%;
+    }
+
+    .soon {
+        position: absolute;
+        top: 90px;
+        left: 33%;
+    }
+
+}
+
 /*--------------------------------------*/
 /*---------------Contact----------------*/
 
-    /* #contact-me {
-        flex-direction: row;
-        align-items: center;
-        justify-items: center;
-    } */
-
     .bottom-nav {
         flex: 5;
-        padding: 25px 15px;
+        padding: 25px 15px 15px 15px;
     }
 
     .social i {
         margin: 0 75px;
+    }
+
+    footer {
+        margin: 5% 0 3% 0;
     }
 
 }
