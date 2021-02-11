@@ -2,21 +2,33 @@
     --main-bg: #fff;
     --header-primary: #26292b;
     --header-secondary: rgb(82, 195, 199);
+    --gray-text: #44474a;
+    --blue-color: rgb(45, 179, 244);
 }
 
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     /* font-size: 16px; */
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
 nav a, #contact-me a {
-    color: var(--header-secondary);
+    color: var(--blue-color);
     font-size: 1.5em;
     font-weight: 400;
 }
 
 a:visited {
-    color: var(--header-secondary);
+    color: var(--blue-color);
+}
+
+p {
+    color: var(--gray-text);
 }
 
 /*--------------------------------------*/
@@ -24,26 +36,42 @@ a:visited {
 
 header {
     padding: 20px 0;
-    background: linear-gradient(var(--header-primary), var(--main-bg));
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    /* background: linear-gradient(var(--header-primary), var(--main-bg)); */
 }
 
 h1 {
     display: block;
-    font-size: 2.5em;
-    color: #26292b;
-    background: linear-gradient(to bottom right, rgba(82, 195, 199, 1), rgba(104, 176, 179, .5));
+    font-size: 4em;
+    font-weight: 200;
+    color: var(--blue-color);
     opacity: 0.66;
     margin: 0;
-    padding: 10px 10px 10px 10px;
     text-align: center;
+}
+
+header span {
+    font-size: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+.position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 3%
 }
 
 nav {
     font-size: 1em;
-    color: var(--header-secondary);
+    color: var(--blue-color);
     opacity: 0.66;
     text-decoration: underline;
-    margin: 3%;
+    margin-top: 2%;
     position: relative;
 }
 
@@ -55,49 +83,8 @@ nav ul {
 }
 
 nav ul li {
-    margin: 1% 0;
+    margin-top: 10%;
 }
-
-/* nav::after {
-    opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: "test";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    height: 100px;
-    margin: auto;
-    z-index: 1;
-    background-color: black;
-    color: #fff;
-} */
-
-/* .subtitle {
-    display: none;
-    padding: 15px 20px;
-    font-size: 1.5em;
-    color: #26292b;
-    background: linear-gradient(to bottom, rgba(82, 195, 199, .6), rgba(104, 176, 179, .3));
-    opacity: 0.66;
-    text-align: center;
-    vertical-align: center;
-    position: absolute;
-    top: -70px;
-    right: 0;
-    left: 25%;
-    height: 50px;
-    width: 300px;
-} */
-
-/* .banner-extension {
-    height: 20px;
-    margin-bottom: 3%
-} */
 
 /*--------------------------------------*/
 /*----------------Side------------------*/
@@ -110,14 +97,19 @@ nav ul li {
     background-color: var(--main-bg);
     font-size: 2em;
     font-weight: 600;
-    border-bottom: solid 5px var(--header-secondary);
-    border-top: solid 5px var(--header-secondary);
+    border-bottom: solid 5px var(--blue-color);
+    border-top: solid 5px var(--blue-color);
     margin: 3% 5%;
 }
 
 .side-text {
     display: flex;
     flex-direction: row;
+    margin: 2% 0;
+}
+
+.side span {
+color: var(--gray-text);
 }
 
 /*--------------------------------------*/
@@ -142,13 +134,15 @@ nav ul li {
     margin-right: 2%;
     align-self: center;
     margin-bottom: 3%;
+    border: solid 3px var(--blue-color);
+    border-radius: 50%;
 }
 
 .about-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2% 10%;
+    margin: 5% 10% 0 10%;
 }
 
 .about-text p {
@@ -164,64 +158,25 @@ nav ul li {
     flex-direction: column;
 }
 
-.contact-body {
+.bottom-nav {
     background-color: var(--main-bg);
-    flex: 5;
-    padding: 25px 15px;
-    text-decoration: underline;
 }
 
-.contact-body ul {
+.social {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
-.contact-body ul li {
-    margin: 1% 0;
+.social i {
+    margin: 0 50px;
+}
+
+footer {
+    margin: 8% 0 3% 0;
 }
 
 @media screen and (min-width: 880px) {
 
-/*--------------------------------------*/
-/*---------------Header-----------------*/
-
-    h1 {
-        display: block;
-        background: linear-gradient(to right,rgba(82, 195, 199, 1), rgba(104, 176, 179, .5));
-        padding: 10px 10px 10px 50px;
-        text-align: left;
-    }
-
-    nav {
-        display: block;
-        float: left;
-        font-size: 1em;
-        color: var(--header-secondary);
-        opacity: 0.66;
-        text-decoration: underline;
-        margin: 1% 2%;
-    }
-
-    nav ul {
-        list-style-type: none;
-        flex-direction: row;
-    }
-
-    nav ul li {
-        margin-left: 25px;
-    }
-
-    /* .subtitle {
-        top: 50px;
-        left: 25px;
-    } */
-
-    .banner-extension {
-        height: 120px;
-        margin-bottom: 3%;
-    }
 
 /*--------------------------------------*/
 /*----------------About-----------------*/
@@ -253,42 +208,17 @@ nav ul li {
 /* Desktop */
 @media screen and (min-width: 1200px) {
 
-/*--------------------------------------*/
-/*---------------Header-----------------*/
-
-    h1 {
-        display: inline-block;
-        background: linear-gradient(to right,rgba(82, 195, 199, 1), rgba(104, 176, 179, 0));
-        padding: 10px 250px 10px 50px;
-        text-align: left;
-    }
-
-    nav {
-        display: inline-block;
-        float: right;
-        font-size: 1em;
-        color: var(--header-secondary);
-        opacity: 0.66;
-        text-decoration: underline;
-    }
-    
     nav ul {
         list-style-type: none;
+        display: flex;
         flex-direction: row;
+        align-items: center;
     }
-    
+
     nav ul li {
-        margin-left: 25px;
+        margin: 0 10%;
+        width: 100%;
     }
-
-    /* .subtitle {
-        top: 100px;
-        left: 150px;
-        z-index: 2;
-    } */
-
-/*--------------------------------------*/
-/*----------------About-----------------*/
 
     #about-me {
         flex-direction: row;
@@ -300,7 +230,7 @@ nav ul li {
         align-items: flex-end;
         text-align: right;
         padding-right: 1%;
-        border-right: solid 5px var(--header-secondary);
+        border-right: solid 5px var(--blue-color);
         border-bottom: 0;
         border-top: 0;
         box-sizing: border-box;
@@ -345,24 +275,15 @@ nav ul li {
         justify-items: center;
     }
 
-    .contact-body {
+    .bottom-nav {
         background-color: var(--main-bg);
         flex: 5;
-        padding: 25px 15px;
         text-decoration: underline;
+        padding: 25px 15px;
     }
 
-    .contact-body ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: baseline;
-    }
-
-    .contact-body ul li {
-        margin: 1% 0;
+    .social i {
+        margin: 0 75px;
     }
 
 }
-
-/* Tablet */

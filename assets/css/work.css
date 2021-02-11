@@ -2,6 +2,8 @@
     --main-bg: #fff;
     --header-primary: #26292b;
     --header-secondary: rgb(82, 195, 199);
+    --gray-text: #44474a;
+    --blue-color: rgb(45, 179, 244);
 }
 
 
@@ -14,12 +16,8 @@
 }
 
 .work-body {
-    background-color: var(--main-bg);
     flex: 5;
     padding: 25px 15px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     margin: 1% 6%;
 }
 
@@ -29,7 +27,7 @@
 
 .project-label {
     color: #26292b;
-    background: var(--header-secondary);
+    background: var(--blue-color);
     position: absolute;
     bottom: 15%;
     padding: 1% 5% 1% 1.5%;
@@ -40,8 +38,28 @@
     max-width: 100%;
     height: 150px;
     background: linear-gradient(to bottom right, rgb(172, 82, 199), rgba(104, 78, 112, 0.5));
-    border: solid 5px var(--header-secondary);
+    border: solid 5px var(--blue-color);
     margin: 5px 0;
+    position: relative;
+    /* text-align: center; */
+}
+
+.soon-big {
+    color: var(--gray-text);
+    position: absolute;
+    top: 50px;
+    left: 27%;
+    font-size: 2em;
+    opacity: .75;
+}
+
+.soon {
+    color: var(--gray-text);
+    position: absolute;
+    top: 50px;
+    left: 27%;
+    font-size: 2em;
+    opacity: .75;
 }
 
 .project-banner:hover {
@@ -58,6 +76,13 @@
     font-size: .8em;
     padding: 10% 0 0 0;
     font-weight: 200;
+}
+
+@media screen and (min-width: 880px) {
+
+    .project-banner {
+        height: 175px;
+    }
 }
 
 
@@ -78,12 +103,28 @@
 
     .project-banner {
         margin: 0;
+        height: 200px;
     }
 
     #first-project {
         grid-column-start: 1;
         grid-column-end: 3;
         justify-self: stretch;
+    }
+
+    .soon-big {
+        position: absolute;
+        font-size: 4em;
+        top: 60px;
+        left: 40%;
+
+    }
+
+    .soon {
+        position: absolute;
+        top: 90px;
+        left: 35%;
+
     }
 
 }
