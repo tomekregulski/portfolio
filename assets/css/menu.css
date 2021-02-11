@@ -1,0 +1,27 @@
+nav {
+    font-size: 1em;
+    color: var(--light-blue);
+    opacity: 0.66;
+    text-decoration: underline;
+    margin-top: 2%;
+    position: relative;
+}
+
+.burger {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url(../images/burger.png) no-repeat 98% center;
+    cursor: pointer;
+}
+
+#menu {
+    display: block;
+    float: right;
+    height: 0;
+    overflow: hidden;
+}
+
+#menu.open {
+    height: auto;
+}
