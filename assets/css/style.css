@@ -20,7 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 } 
 
@@ -61,7 +61,7 @@ header {
 } 
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 200;
     color: var(--light-blue);
     opacity: 0.66;
@@ -110,6 +110,9 @@ nav {
 
 /*--------------------------------------*/
 /*----------------About-----------------*/
+#about-me h2 {
+    margin: 5% 0;
+}
 
 .about-body {
     display: flex;
@@ -130,6 +133,10 @@ nav {
 
 /*--------------------------------------*/
 /*----------------Work-----------------*/
+
+#work h2 {
+    margin-bottom: 5%;
+}
 
 .work-body {
     display: flex;
@@ -179,17 +186,61 @@ nav {
 /*--------------------------------------*/
 /*----------------Contact---------------*/
 
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-me h2 {
+    margin: 5% 0;
+}
+
+.bottom-nav {
+    margin: 0 15%;
+}
+
 .social {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .social i {
-    margin: 0 50px;
+    margin: 15px 30px;
 }
 
 footer {
     margin: 8% 0 3% 0;
+}
+
+@media screen and (min-width: 866px) {
+
+    body {
+        width: 70%;
+    } 
+
+/*--------------------------------------*/
+/*----------------Contact---------------*/
+
+    .bottom-nav {
+        margin: 0;
+    }
+
+    .social {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .social i {
+        margin: 0;
+    }
+
+    footer {
+        margin: 8% 0 3% 0;
+    }
+
 }
 
 @media screen and (min-width: 880px) {
@@ -295,5 +346,17 @@ footer {
     footer {
         margin: 5% 0 3% 0;
     }
+
+}
+
+@media screen and (min-width: 1350px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+    } 
 
 }
