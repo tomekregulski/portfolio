@@ -1,3 +1,6 @@
+/*--------------------------------------*/
+/*---------------General-----------------*/
+
 :root {
     --white: #fff;
     --header-primary: #26292b;
@@ -21,11 +24,6 @@ body {
     margin: 0 auto;
 } 
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 nav a, #contact-me a {
     color: var(--light-blue);
     font-size: 1.5em;
@@ -41,7 +39,6 @@ p {
 }
 
 h2 {
-    display: block;
     margin: 2% 0;
     font-size: 2em;
     font-weight: 600;
@@ -49,7 +46,6 @@ h2 {
     border-top: solid 5px var(--light-blue);
     color: var(--gray-text);
     padding: 15px;
-    margin: 3% 5%;
     text-align: center;
 }
 
@@ -69,23 +65,13 @@ h1 {
     font-weight: 200;
     color: var(--light-blue);
     opacity: 0.66;
-    margin: 0;
-    text-align: center;
-}
-
-header span {
-    font-size: 1.2em;
-    font-weight: 100;
-    text-transform: uppercase;
-    margin-top: 3%;
-    text-align: center;
 }
 
 .position {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;   
-    margin-top: 3%
+    margin-top: 3%;
+    font-size: 1.2em;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 nav {
@@ -93,7 +79,6 @@ nav {
     color: var(--light-blue);
     opacity: 0.66;
     margin-top: 2%;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,8 +86,9 @@ nav {
 
 .burger {
     cursor: pointer;
+    margin-top: 10px;
     padding: 5px;
-    background-color: var(--gray-text: #44474a);
+    /* background-color: var(--gray-text); */
 }
 
 #menu {
@@ -146,6 +132,10 @@ nav {
 /*----------------Work-----------------*/
 
 .work-body {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 auto;
+    width: 90%;
     margin: 1% 6%;
 }
 
@@ -164,30 +154,11 @@ nav {
 
 .project-banner {
     max-width: 100%;
-    height: 150px;
-    background: linear-gradient(to bottom right, rgb(172, 82, 199), rgba(104, 78, 112, 0.5));
     border: solid 2px var(--light-blue);
     margin: 5px 0;
     position: relative;
 }
 
-.soon-big {
-    color: var(--gray-text);
-    position: absolute;
-    top: 50px;
-    left: 27%;
-    font-size: 2em;
-    opacity: .75;
-}
-
-.soon {
-    color: var(--gray-text);
-    position: absolute;
-    top: 50px;
-    left: 27%;
-    font-size: 2em;
-    opacity: .75;
-}
 
 .project-banner:hover {
     opacity: .75;
@@ -228,19 +199,11 @@ footer {
         margin: 0 auto;
     } 
 
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .burger {
         display: none;
-        /* height: 0; */
     }
 
     #menu {
-        list-style-type: none;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -254,17 +217,10 @@ footer {
         margin: 0 10px;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
 /*--------------------------------------*/
 /*----------------Work-----------------*/
 
     .work-body {
-        /* margin: 0; */
         display: grid;
         grid-template-columns: 50% 50%;
         grid-row-gap: 4px;
@@ -299,28 +255,8 @@ footer {
 /* Desktop */
 @media screen and (min-width: 1200px) {
 
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-    } 
-
     h1 {
         padding: 25px 0 0 0;
-    }
-
-    .position {
-        flex-direction: row;
-        align-items: center;   
-        margin-top: 3%
-    }    
-    
-    #menu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
 
     #menu li {
@@ -334,13 +270,6 @@ footer {
 /*--------------------------------------*/
 /*----------------Work-----------------*/
 
-    .work-body {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-row-gap: 4px;
-        grid-column-gap: 4px;
-    }
-
     .project-banner {
         margin: 0;
         height: 200px;
@@ -349,30 +278,14 @@ footer {
     #first-project {
         grid-column-start: 1;
         grid-column-end: 3;
-        justify-self: stretch;
+        justify-self: center;
     }
-
-    .soon-big {
-        position: absolute;
-        font-size: 4em;
-        top: 60px;
-        left: 30%;
-    }
-
-    .soon {
-        position: absolute;
-        top: 90px;
-        left: 33%;
-    }
-
-}
 
 /*--------------------------------------*/
 /*---------------Contact----------------*/
 
-    .bottom-nav {
-        flex: 5;
-        padding: 25px 15px 15px 15px;
+    .social {
+        margin-top: 10%;
     }
 
     .social i {
