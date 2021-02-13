@@ -1,6 +1,5 @@
 Columbia Coding Boot Camp - Homework 02 - Portfolio
 
-* [Abstract](#abstract)
 * [Description ](#description)
 * [What I Learned](#what-i-learned)
 * [Installation and Usage](#installation-and-usa)
