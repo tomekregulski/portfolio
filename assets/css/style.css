@@ -478,3 +478,18 @@ footer {
         width: 90%;
     }
 }
+
+@media screen and (min-width: 1850px) {
+
+    .work-body {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1850px) {
+
+    .work-body {
+        width: 70%;
+        margin-left: 15%;
+    }
+}
