@@ -210,10 +210,10 @@ nav {
 
 footer {
     margin: 8% 0 3% 0;
-    /* text-align: center; */
 }
 
 @media screen and (min-width: 350px) {
+    
     .project-label { 
         padding: 1% 4% 1% 1.5%;
     }
@@ -237,6 +237,7 @@ footer {
 }    
 
 @media screen and (min-width: 370px) {
+    
     .project-label { 
         padding: 1.4% 4% 1.4% 1.5%;
     }
@@ -244,7 +245,6 @@ footer {
     #about-me h2 {
         margin: 4% 0;
     }
-
 }
 
 @media screen and (min-width: 380px) {
@@ -332,9 +332,6 @@ footer {
     body {
         width: 70%;
     } 
-
-/*--------------------------------------*/
-/*----------------Contact---------------*/
 
     .bottom-nav {
         margin: 0;
@@ -430,7 +427,6 @@ footer {
     }
 
     .about-text {
-
         margin-top: 1%;
     }
 
@@ -449,17 +445,14 @@ footer {
     #first-project {
         grid-column-start: 1;
         grid-column-end: 3;
-        /* justify-self: center; */
     }
 
 /*--------------------------------------*/
 /*---------------Contact----------------*/
 
-
     footer {
         margin: 5% 0 3% 0;
     }
-
 }
 
 @media screen and (min-width: 1350px) {
@@ -480,5 +473,4 @@ footer {
     #big-banner {
         height: 150px;
     }
-
 }
