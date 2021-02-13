@@ -474,7 +474,7 @@ footer {
         height: 120px;
     }
 
-    #big-banner {
-        height: 150px;
+    .work-body {
+        width: 90%;
     }
 }
