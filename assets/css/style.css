@@ -45,7 +45,7 @@ h2 {
     border-bottom: solid 5px var(--light-blue);
     border-top: solid 5px var(--light-blue);
     color: var(--gray-text);
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
 }
 
@@ -57,7 +57,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;    
-    background: linear-gradient(var(--header-primary), var(--main-bg));
 } 
 
 h1 {
@@ -189,7 +188,6 @@ nav {
 #contact-me {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #contact-me h2 {
@@ -202,17 +200,26 @@ nav {
 
 .social {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
 }
 
 .social i {
-    margin: 15px 30px;
+    font-size: .75em;
 }
 
 footer {
     margin: 8% 0 3% 0;
+    /* text-align: center; */
 }
+
+@media screen and (min-width: 590px) {
+
+    .social {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
 
 @media screen and (min-width: 866px) {
 
