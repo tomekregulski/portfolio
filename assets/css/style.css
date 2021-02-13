@@ -10,6 +10,10 @@
     --light-blue: rgb(45, 179, 244);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
