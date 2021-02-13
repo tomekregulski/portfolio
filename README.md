@@ -8,9 +8,9 @@ Columbia Coding Boot Camp - Homework 02 - Portfolio
 
 # Description
 
-For this assignment I created my own portfolio site that includes a clear title and functional navbar, a recent photo, brief bio, portfolio of my work with links to deployed apps, and contact info. 
+For this assignment I created my portfolio site, which includes a clear title and functional navbar, a recent photo, brief bio, a section to display my work as it becomes available, and contact info. 
 
-At the moment, the entire work section is filled with placeholders, as I do not have any completed apps at the moment. I will update this page as I progress through the course, adding new projects as they are completed. 
+At the moment, the entire work section is filled with placeholders, as I do not have any completed apps at the moment. I will update this page as I progress through the course, adding new projects as they are completed. Additionally, I plan to regularly make updates to the styling as I gain a firmer understanding of CSS.
 
 This page has been deployed on Github as a work-in-progress, and can be viewed here: https://tomekregulski.github.io/portfolio/
 
@@ -18,7 +18,7 @@ This page has been deployed on Github as a work-in-progress, and can be viewed h
 
 This project has served to not only solidify what I have learned about HTML and CSS thus far, but also challenged me to expand my working knowledge of the languages in order to meet the functionality requirements.
 
-I am excited to know that I am now capable of producing an elegant site suing a popular deisng layout, as well as knowing that I am able to seek out my own solutions to unique design and functionality needs.
+I am excited to know that I am now capable of producing an elegant site that is responsive to different screen sizes, makes use of makes use of pseudo classes to enhance certain parts of the user experience, and even make use of a few lines of JavaScript/jQuery to include a collapsible menu for smaller screens. Additionally, this project helped me gain confidence in turning to the online community for solutions to specific design and functionality issues.
 
 # Installation and Use
 
