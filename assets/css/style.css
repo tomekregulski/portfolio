@@ -483,13 +483,22 @@ footer {
 
     .work-body {
         width: 80%;
+        margin-left: 10%;
     }
 }
 
-@media screen and (min-width: 1850px) {
+@media screen and (min-width: 2100px) {
 
     .work-body {
         width: 70%;
         margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 2400px) {
+
+    .work-body {
+        width: 65%;
+        margin-left: 17%;
     }
 }
