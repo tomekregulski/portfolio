@@ -8,117 +8,91 @@
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-        <title>Document</title>
+        <title>Tomek Regulski's Portfolio</title>
     </head>
     <body>
         <header>
             <h1>Tomek Regulski</h1>
-            <div class="position">
+            <div id="subtitle">
                 <span>Web Developement Student</span>
             </div>
             <nav>
-                <a class="burger">Menu</a>
-                <ul id="menu">
+                <a id="menu">Menu</a>
+                <ul id="menu-item">
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#work">My Work</a></li>
                     <li><a href="#contact-me">Contact</a></li>
-                    <li><a href="https://docs.google.com/document/d/1OhOVkM8E7G7fJCItDPEkMZNlcLgX-MjAQjnd728xN6k/edit"> Resume </a></li>
+                    <li><a href="https://docs.google.com/document/d/1OhOVkM8E7G7fJCItDPEkMZNlcLgX-MjAQjnd728xN6k/edit">Resume</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section class="main-wrapper">
-                <section id="about-me">
-                    <h2>
-                        About Me
-                    </h2>
-                    <section class="about-body">
-                        <img src="./assets/images/tomek2.jpg" alt="Picture of Tomek">
-                        <div class="about-text">
-                            <p>
-                                Hello! I'm Tomek.
-                            </p>
-                            <p>
-                                I am currently a student at Columbia Engineering's Coding Boot Camp. I am looking forward to leveraging my years of experience in the Natural Food and Beverage, and Performing Arts industries, to create products that provide functionally and elegant solutions to essential tasks. 
-                            </p>
-                            <p>
-                                For now, I am simply working on building up my toolkit. I'll be adding links to projects as a progress, so please come back soon and see what's new!
-                            </p>
-                        </div>
-                    </section>
+            <section id="about-me">
+                <h2>
+                    About Me
+                </h2>
+                <section id="about-body">
+                    <img 
+                        src="./assets/images/tomek2.jpg" 
+                        data-normal="./assets/images/tomek2.jpg"
+                        data-alt="./assets/images/tomek-overlay.png"
+                        data-state="normal"
+                        alt="Picture of Tomek">
+                    <div id="about-text">
+                        <p>
+                            Hello! I'm Tomek.
+                        </p>
+                        <p>
+                            I am currently a student at Columbia Engineering's Coding Boot Camp. I am looking forward to leveraging my years of experience in the Natural Food and Beverage, and Performing Arts industries, to create products that provide functionally and elegant solutions to essential tasks. 
+                        </p>
+                        <p>
+                            For now, I am simply working on building up my toolkit. I'll be adding links to projects as a progress, so please come back soon and see what's new!
+                        </p>
+                    </div>
                 </section>
-                <section id="work">
-                    <h2>
-                        My Work
-                    </h2>
-                    <section class="work-body">
-                        <section class="project-container" id="first-project"> 
-                            <a href="https://github.com/tomekregulski?tab=repositories" target="blank"><img src="./assets/images/coming_soon.png" alt="project image" class="project-banner" id="big-banner"></a>
-                            <div class="project-label">
-                                <p class="project-title">Title</p>
-                                <p class="project-desc">Tools Used</p>
-                            </div>
-                        </section>
-                        <section class="project-container" class="other-project">
-                            <a href="https://github.com/tomekregulski?tab=repositories" target="blank"><img src="./assets/images/coming_soon.png" alt="project image" class="project-banner"></a>
-                            <div class="project-label">
-                                <p class="project-title">Title</p>
-                                <p class="project-desc">Tools Used</p>
-                            </div>
-                        </section>
-                        <section class="project-container" class="other-project">
-                            <a href="https://github.com/tomekregulski?tab=repositories" target="blank"><img src="./assets/images/coming_soon.png" alt="project image" class="project-banner"></a>
-                            <div class="project-label">
-                                <p class="project-title">Title</p>
-                                <p class="project-desc">Tools Used</p>
-                            </div>
-                        </section>
-                        <section class="project-container" class="other-project">
-                            <a href="https://github.com/tomekregulski?tab=repositories" target="blank"><img src="./assets/images/coming_soon.png" alt="project image" class="project-banner"></a>
-                            <div class="project-label">
-                                <p class="project-title">Title</p>
-                                <p class="project-desc">Tools Used</p>
-                            </div>
-                        </section>
-                        <section class="project-container" class="other-project">
-                            <a href="https://github.com/tomekregulski?tab=repositories" target="blank"><img src="./assets/images/coming_soon.png" alt="project image" class="project-banner"></a>
-                            <div class="project-label">
-                                <p class="project-title">Title</p>
-                                <p class="project-desc">Tools Used</p>
-                            </div>
-                        </section>
-                    </section>
+            </section>
+            <section id="work">
+                <h2>
+                    My Work
+                </h2>
+                <section id="work-body">
+                    <div id="projects">
+                        <!-- projects rendering from JS -->
+                    </div>
                 </section>
-                <section id="contact-me">
-                    <h2>
-                        Contact Me
-                    </h2>
-                    <nav class="bottom-nav">
-                        <ul class="social">
-                            <li>
-                                <a class="fontawesome" href="https://www.linkedin.com/in/tomek-regulski-867153130/" target="_blank"></li>
-                            <span style="font-size: 3em; color: rgb(45, 179, 244);">
-                                <i class="fab fa-linkedin-in"></i>
-                            </span></a>
-                            <li><a class="fontawesome" href="https://github.com/tomekregulski" target="_blank"></li>
-                            <span style="font-size: 3em; color: rgb(45, 179, 244);">
-                                <i class="fab fa-github"></i>
-                            </span></a>
-                            <li><a class="fontawesome" href="mailto: tomek@resonantmc.com" target="_blank"></li>
-                            <span style="font-size: 3em; color: rgb(45, 179, 244);">
-                                <i class="fas fa-envelope-square"></i>
-                            </span></a>
-                            <li><a class="fontawesome" href="https://www.facebook.com/tomek.regulski" target="_blank"></li>
-                            <span style="font-size: 3em; color: rgb(45, 179, 244);">
-                                <i class="fab fa-facebook"></i>
-                            </span></a>
-                        </ul>
-                    </nav>
-                </section>
-            </div>    
+            </section>
+            <section id="contact-me">
+                <h2>
+                    Contact Me
+                </h2>
+                <nav class="bottom-nav">
+                    <ul class="social">
+                        <li>
+                            <a class="fontawesome" href="https://www.linkedin.com/in/tomek-regulski-867153130/" target="_blank"></li>
+                        <span style="font-size: 2em; color: rgb(45, 179, 244);">
+                            <i class="fab fa-linkedin-in"></i>
+                        </span></a>
+                        <li><a class="fontawesome" href="https://github.com/tomekregulski" target="_blank"></li>
+                        <span style="font-size: 2em; color: rgb(45, 179, 244);">
+                            <i class="fab fa-github"></i>
+                        </span></a>
+                        <li><a class="fontawesome" href="mailto: tomek@resonantmc.com" target="_blank"></li>
+                        <span style="font-size: 2em; color: rgb(45, 179, 244);">
+                            <i class="fas fa-envelope-square"></i>
+                        </span></a>
+                        <li><a class="fontawesome" href="https://www.facebook.com/tomek.regulski" target="_blank"></li>
+                        <span style="font-size: 2em; color: rgb(45, 179, 244);">
+                            <i class="fab fa-facebook"></i>
+                        </span></a>
+                    </ul>
+                </nav>
+            </section>
         </main>
         <footer>
-            <p class="copyright">&copy; Copyright 2021 Tomek Regulski</p>
+            <div id="copyright">
+                <span>&copy; Copyright 2021</span>
+                <span>Tomek Regulski</span>
+            </div>
         </footer>
         <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="./assets/js/menu.js"></script>
