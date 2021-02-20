@@ -28,19 +28,19 @@ imageContainer.addEventListener("click", function(event) {
 var projects = [
 {
     title: 'Website Accessibility Refactor',
-    thumbnail: '../assets/images/placeholder.png',
+    thumbnail: './assets/images/placeholder.png',
     tags: ['HTML','CSS'],
     link: '#'
 },
 {
     title: 'Random Password Generator',
-    thumbnail: '../assets/images/placeholder.png',
+    thumbnail: './assets/images/placeholder.png',
     tags: ['HTML','CSS','Javascript'],
     link: '#css-code-snippets'
 },
 {
     title: 'Rock, Paper, Scissors Browser Game',
-    thumbnail: '../assets/images/placeholder.png',
+    thumbnail: './assets/images/placeholder.png',
     tags: ['JavaScript'],
     link: '#'
 },
