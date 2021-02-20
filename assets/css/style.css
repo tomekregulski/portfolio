@@ -168,7 +168,7 @@ nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	max-width: 300px;
+	max-width: 900px;
 	margin: 0 auto;
 	padding: 1rem;
 }
