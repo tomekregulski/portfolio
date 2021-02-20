@@ -3,8 +3,6 @@
 
 :root {
     --white: #fff;
-    --header-primary: #26292b;
-    --header-secondary: rgb(82, 195, 199);
     --gray-text: #44474a;
     --dark-blue: rgb(43, 61, 125);
     --light-blue: rgb(45, 179, 244);
@@ -50,6 +48,10 @@ h2 {
     border-top: solid 1px var(--light-blue);
     color: var(--gray-text);
     text-align: center;
+}
+
+h3 {
+    text-color: var(--light-blue);
 }
 
 /*--------------------------------------*/
@@ -155,14 +157,6 @@ nav {
     width: 90%;
     /* margin: 0 6%; */
 }
-
-/* .project-label {
-    margin: 2em ;
-}
-
-.project-label p {
-    text-align: center;
-} */
 
 #projects {
 	display: flex;

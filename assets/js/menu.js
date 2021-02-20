@@ -46,7 +46,7 @@ var projects = [
 },
 {
     title: 'Deep Roots Ensemble',
-    thumbnail: '../assets/images/placeholder.png',
+    thumbnail: './assets/images/placeholder.png',
     tags: ['HTML','CSS', 'Bootstrap'],
     link: '#'
 }
