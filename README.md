@@ -5,12 +5,7 @@ Columbia Coding Boot Camp - Homework 02 - Portfolio
 * [Installation and Usage](#installation-and-usa)
 * [License](#license)
 
-![homepage main](assets/images/portfolio.gif)
-![homepage main](assets/images/screenshot2.png)
-![homepage main](assets/images/screenshot3.png)
-![homepage main](assets/images/screenshot4.png)
-![homepage main](assets/images/screenshot5.png)
-
+![homepage main](assets/images/Portfolio.gif)
 
 # Description
 
