@@ -125,7 +125,9 @@ nav {
 }
 
 #about-body img {
-    max-height: 125px;
+    /* max-height: 125px; */
+    max-width: 40%;
+    height: auto;
     align-self: center;
     border: solid 2px var(--light-blue);
     border-radius: 50%;
@@ -263,10 +265,17 @@ footer {
     margin-top: .1em;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 400px) {
 
     #about-body img {
-        height: 255px;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width: 550px) {
+
+    #about-body img {
+        max-height: 200px;
     }
 }
 

@@ -27,25 +27,25 @@ imageContainer.addEventListener("click", function(event) {
 
 var projects = [
 {
-    title: 'Website Accessibility Refactor',
-    thumbnail: './assets/images/placeholder.png',
-    tags: ['HTML','CSS'],
-    link: '#'
-},
-{
     title: 'Random Password Generator',
     thumbnail: './assets/images/placeholder.png',
     tags: ['HTML','CSS','Javascript'],
-    link: '#css-code-snippets'
-},
-{
-    title: 'Rock, Paper, Scissors Browser Game',
-    thumbnail: './assets/images/placeholder.png',
-    tags: ['JavaScript'],
     link: '#'
 },
 {
-    title: 'Deep Roots Ensemble',
+    title: 'Field Marketing App - In Progress',
+    thumbnail: './assets/images/placeholder.png',
+    tags: ['HTML','CSS','Bootstrap'],
+    link: '#'
+},
+{
+    title: 'Quiz App',
+    thumbnail: './assets/images/placeholder.png',
+    tags: ['HTML','CSS','Javascript'],
+    link: '#'
+},
+{
+    title: 'Deep Roots Ensemble Artist Page',
     thumbnail: './assets/images/placeholder.png',
     tags: ['HTML','CSS', 'Bootstrap'],
     link: '#'
