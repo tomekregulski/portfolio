@@ -5,7 +5,7 @@ Columbia Coding Boot Camp - Homework 02 - Portfolio
 * [Installation and Usage](#installation-and-usa)
 * [License](#license)
 
-![homepage main](assets/images/Portfolio.gif)
+![https://github.com/tomekregulski/portfolio/blob/main/assets/images/placeholder.png]
 
 # Description
 
