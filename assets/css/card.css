@@ -40,9 +40,13 @@
     align-items: center;
 }
 
+.card-wrapper {
+    border: solid 2px black;
+}
+
 .card_picture-alt {
     display: block;
-    width: 50%;
+    width: 70%;
     margin: 20px auto 10px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -50,40 +54,34 @@
     border-top-right-radius: 3px;
 }
 
-.card_picture-1 {
-    background-image: url(../images/parkSharkBanner.png);
-}
-.card_picture-2 {
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/nat-6.jpg);
-}
-.card_picture-3 {
-    background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nat-7.jpg);
-}
-
 .card_heading {
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 400;
     text-transform: uppercase;
     color: black;
     padding-top: 10px;
-}
-
-.card_details {
-    padding: 3rem;
+    width: 65%;
+    margin: 15px 0 20px;
 }
 
 .card_details ul {
     list-style: none;
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
 }
 
 .card_details li {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 18px;
     padding: 1rem;
+    border-top: 1px solid grey;
 }
 
-.card_details li:not(:last-child) {
+.card_details li:last-child {
     border-bottom: 1px solid grey;
+}
+
+@media screen and (min-width: 600px) {
+    .card_picture-al {
+        width: 60%;
+    }
 }
