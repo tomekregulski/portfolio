@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel ="stylesheet" type="text/css" href="./assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/card.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
@@ -12,11 +13,14 @@
     </head>
     <body>
         <header>
-            <h1>Tomek Regulski</h1>
+            <!-- <h1>Tomek Regulski</h1>
             <div id="subtitle">
-                <span>Web Developement Student</span>
-            </div>
-            <nav>
+                <span>Full Stack Developer</span>
+            </div> -->
+            <h1>
+                TR
+            </h1>
+            <nav id="header-nav">
                 <a id="menu">Menu</a>
                 <ul id="menu-item">
                     <li><a href="#about-me">About Me</a></li>
@@ -28,43 +32,109 @@
         </header>
         <main>
             <section id="about-me">
-                <h2>
+                <!-- <h2>
                     About Me
-                </h2>
+                </h2> -->
                 <section id="about-body">
                     <img 
                         src="./assets/images/tomek2.jpg" 
                         data-normal="./assets/images/tomek2.jpg"
                         data-alt="./assets/images/tomek-overlay.png"
                         data-state="normal"
-                        alt="Picture of Tomek">
+                        alt="Picture of Tomek"
+                        id="profile"
+                        class="img-animated">
                     <div id="about-text">
-                        <p>
+                        <p id="hi">
                             Hello! I'm Tomek.
                         </p>
-                        <p>
-                            I am currently a student at Columbia Engineering's Coding Boot Camp. I am looking forward to leveraging my years of experience in the Natural Food and Beverage, and Performing Arts industries, to create products that provide functionally and elegant solutions to essential tasks. 
+                        <p id="intro">
+                            I'm a full stack developer.
+                        </p>
+                        <!-- <p>
+                            I' am currently a student at Columbia Engineering's Coding Boot Camp. I am looking forward to leveraging my years of experience in the Natural Food and Beverage, and Performing Arts industries, to create products that provide functionally and elegant solutions to essential tasks. '
                         </p>
                         <p>
                             For now, I am simply working on building up my toolkit. I'll be adding links to projects as a progress, so please come back soon and see what's new!
-                        </p>
+                        </p> -->
                     </div>
+                    <a href="#work" class="btn btn-white btn-animated">View my Work</a>
                 </section>
             </section>
             <section id="work">
-                <h2>
+                <!-- <h2>
                     My Work
-                </h2>
+                </h2> -->
                 <section id="work-body">
                     <div id="projects">
+                        <div class="card">
+                            <div class="card_side-front">
+                                <img src="assets/images/parkSharkBanner.png" class="card_picture-alt">
+                                <h4 class="card_heading">
+                                    <span class="card_heading-span-1">ParkShark NYC</span>
+                                </h4>
+                                <div class="card_details">
+                                    <ul>
+                                        <li>HTML/CSS</li>
+                                        <li>Bulma</li>
+                                        <li>JavaScript</li>
+                                        <li>Google Maps API</li>
+                                        <li>NYC Open Data API</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_side-front">
+                                <img src="assets/images/weatherBanner.png" class="card_picture-alt">
+                                <h4 class="card_heading">
+                                    <span class="card_heading-span-1">ParkShark NYC</span>
+                                </h4>
+                                <div class="card_details">
+                                    <ul>
+                                        <li>HTML/CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>OpenWeather API</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card_side-front">
+                                <img src="assets/images/dayPlannerBanner.png" class="card_picture-alt">
+                                <h4 class="card_heading">
+                                    <span class="card_heading-span-1">Day Planner</span>
+                                </h4>
+                                <div class="card_details">
+                                    <ul>
+                                        <li>HTML/CSS</li>
+                                        <li>Bootstrap</li>
+                                        <li>JavaScript</li>
+                                        <li>Moment.js</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <!-- projects rendering from JS -->
                     </div>
                 </section>
             </section>
-            <section id="contact-me">
+            <section id="about-me-new">
                 <h2>
-                    Contact Me
+                    About Me
                 </h2>
+                <p>
+                    Full stack web developer and life-long learner with a background in CPG and the performing arts. Recently earned a certificate in full stack development from Columbia University, with newly developed skills in responsive web design and working with a MERN stack. Passionate about building apps that present elegant and intuitive solutions to core operations. 
+                </p>
+                <p>
+                    I bring with me the experience of having built and managed a national field marketing agency, with hundreds of team members in the field executing campaigns for both emerging and leading brands. I am a creative problem-solver with experience in leading a team through the EOS process, building and maintaining client relationships, and developing programs in order to both scale and remain competitive. I thrive in a collaborative environment, and am known for my ability to communicate professionally in both spoken and written contexts, as well as deliver within a given timeline. 
+                </p>
+            </section>
+            <section id="contact-me">
+                <!-- <h2>
+                    Contact Me
+                </h2> -->
                 <nav class="bottom-nav">
                     <ul class="social">
                         <li>

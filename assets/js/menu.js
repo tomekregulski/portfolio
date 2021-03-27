@@ -28,28 +28,28 @@ imageContainer.addEventListener("click", function(event) {
 var projects = [
   {
       title: 'ParkSharkNYC',
-      thumbnail: './assets/images/placeholder.png',
+      thumbnail: './assets/images/parkSharkBanner.png',
       tags: ['Javascript', 'Bulma', 'GoogleMaps'],
       link: 'https://github.com/tomekregulski/ParkSharkNYC'
   },
   {
       title: 'Weather App',
-      thumbnail: './assets/images/placeholder.png',
+      thumbnail: './assets/images/weatherBanner.png',
       tags: ['Javascript', 'Bootstrap', 'OpenWeather'],
       link: 'https://github.com/tomekregulski/weather-app'
   },
   {
       title: 'Day Planner',
-      thumbnail: './assets/images/placeholder.png',
+      thumbnail: './assets/images/dayPlannerBanner.png',
       tags: ['Javascript', 'HTML/CSS','Bootstrap'],
       link: 'https://github.com/tomekregulski/day-planner'
   },
-  {
-      title: 'Deep Roots Ensemble Artist Page',
-      thumbnail: './assets/images/placeholder.png',
-      tags: ['HTML','CSS', 'Bootstrap'],
-      link: '#'
-  }
+  // {
+  //     title: 'Deep Roots Ensemble Artist Page',
+  //     thumbnail: './assets/images/placeholder.png',
+  //     tags: ['HTML','CSS', 'Bootstrap'],
+  //     link: '#'
+  // }
   ];
 
 
@@ -100,5 +100,5 @@ for (var i = 0; i < projects.length; i++) {
 };
 
 // call our mapping function
-mapProjects();
+// mapProjects();
   
