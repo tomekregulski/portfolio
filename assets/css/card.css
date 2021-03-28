@@ -47,7 +47,7 @@
 .card_picture-alt {
     display: block;
     width: 70%;
-    margin: 20px auto 10px;
+    margin: 20px auto 30px;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
@@ -71,13 +71,40 @@
 
 .card_details li {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     padding: 1rem;
     border-top: 1px solid grey;
 }
 
 .card_details li:last-child {
     border-bottom: 1px solid grey;
+}
+
+.card_details a {
+    font-size: 20px;
+    color: var(--light-blue);
+}
+
+.card_details a:visited {
+    color: var(--light-blue);
+}
+
+.card_details a:hover {
+    animation: colorChange 2s;
+}
+
+@keyframes colorChange {
+    0% {
+        color: var(--light-blue);
+    }
+
+    50% {
+        color: rgb(177, 85, 174);
+    }
+
+    100% {
+        color: var(--light-blue);
+    }
 }
 
 @media screen and (min-width: 600px) {
