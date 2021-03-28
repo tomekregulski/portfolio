@@ -28,7 +28,7 @@ nav a, #contact-me a {
     font-weight: 400;
 }
 
-a:visited {
+nav a:visited {
     color: var(--light-blue);
 }
 
@@ -276,6 +276,7 @@ nav {
     position: relative;
     margin: 10vh auto;
     font-size: .7rem;
+    color: var(--light-blue);
 }
 
 .btn:hover {
@@ -289,9 +290,13 @@ nav {
     /* transition: .4s */
 }
 
-.btn-white {
-    background-color: var(--dark-blue: rgb(43, 61, 125));
+.btn:visited {
+    color: var(--light-blue);
 }
+
+/* .btn-white {
+    background-color: var(--dark-blue: rgb(43, 61, 125));
+} */
 
 .btn-animated {
     animation: moveInBottom 8s;
