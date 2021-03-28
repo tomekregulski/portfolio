@@ -15,14 +15,10 @@ html {
 * {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    /* font-size: 16px; */
+    font-size: 24px;
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* width: 90%; */
     margin: 0 auto;
 } 
 
@@ -76,7 +72,7 @@ header {
 h1 {
     display: block;
     float: left;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 200;
     color: var(--light-blue);
     opacity: 0.66;
@@ -100,7 +96,6 @@ h1 {
 } */
 
 nav {
-    font-size: 1em;
     color: var(--light-blue);
     opacity: 0.66;
 }
@@ -129,7 +124,7 @@ nav {
 
 #menu-item li {
     padding: 5px 0; 
-    font-size: .75em;
+    font-size: .65rem;
 }
 
 #myWork {
@@ -265,6 +260,7 @@ nav {
     transition: all .2s;
     position: relative;
     margin: 10vh auto;
+    font-size: .7rem;
 }
 
 .btn:hover {
@@ -364,16 +360,23 @@ nav {
 
 #about-me-new {
     border-bottom: solid 2px var(--light-blue);
-    height: 100vh;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 2% 20px;
+    height: 100vh;
+}
+
+#about-me-new h2 {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
 }
 
 #about-me-new p {
-    margin: 10px 15% 0;
+    margin: 0 5% 10px;
+    font-size: .7rem;
 }
 
 /*--------------------------------------*/
@@ -384,12 +387,7 @@ nav {
     flex-direction: column;
 }
 
-#contact-me h2 {
-    margin-top: .1em;
-}
-
  .bottom-nav {
-    margin-top: .5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -402,13 +400,13 @@ nav {
 }
 
 .social i {
-    font-size: .7em;
-    margin: 0 .3em;
+    font-size: 2rem;
+    margin: 0 .4rem;
     /* Why can't I use percentages to space these out? */
 }
 
 footer {
-    margin: 1.2em 0 1.4em 0;
+    margin-top: 1rem;
     text-align: center;
 } 
 
@@ -416,10 +414,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: .5rem;
 }
 
 #copyright span {
-    margin-top: .1em;
+    margin-top: .2rem;
+    font-size: .8rem;
 }
 
 @media screen and (min-width: 400px) {
@@ -432,7 +432,7 @@ footer {
 @media screen and (min-width: 550px) {
 
     #profile{
-        max-height: 200px;
+        max-height: 280px;
     }
 
     #menu-item {
@@ -442,6 +442,16 @@ footer {
 
     #menu-item li {
         padding-left: 10px;
+    }
+    
+    #about-me-new h2 {
+        margin-bottom: 6vh;
+        font-size: 1.3rem;
+    }
+    
+    #about-me-new p {
+        margin: 0 5% 3vh;
+        font-size: .9rem;
     }
 }
 
@@ -478,9 +488,22 @@ footer {
     } */
 
     #menu-item li {
-        font-size: .8em;
+        font-size: .6em;
         margin-left:15px;
     }
 
 }
 
+@media screen and (min-width: 1000px) {
+    
+    #about-me-new h2 {
+        margin-bottom: 8vh;
+        font-size: 1.7rem;
+    }
+    
+    #about-me-new p {
+        margin: 0 15% 5vh;
+        font-size: 1.1rem;
+    }
+
+}
