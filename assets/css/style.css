@@ -87,6 +87,10 @@ h1 {
 
 }
 
+h1:hover {
+    animation: colorChange 4s;
+}
+
 /* #subtitle {
     margin-top: .9em;
     font-size: 1em;
@@ -125,6 +129,7 @@ nav {
 #menu-item li {
     padding: 5px 0; 
     font-size: .65rem;
+    transition: all .4s;
 }
 
 #myWork {
@@ -133,7 +138,7 @@ nav {
 
 #menu-item li:hover {
     transform: scale(1.01) translateY(-3px);
-    text-shadow: 0 5px 5px rgba(150, 169, 193, 0.29);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.29);
 }
 
 /*--------------------------------------*/
@@ -151,7 +156,6 @@ nav {
 }
 
 #profile {
-    /* max-height: 125px; */
     max-width: 50%;
     height: auto;
     align-self: center;
@@ -209,17 +213,28 @@ nav {
     animation: borderChange 4s;
 } */
 
-@keyframes borderChange {
+@keyframes colorChange {
     from {
-        border: solid 2px var(--light-blue);
+        color: var(--light-blue);
+        border: solid .5px var(--light-blue);
+    }
+
+    30% {
+        border: solid 2px;
     }
 
     50% {
-        border: solid 2px rgb(177, 85, 174);
+        color: rgb(177, 85, 174);
+        border: solid .8px rgba(21, 249, 0, 0.276);
+    }
+
+    60% {
+        border: solid .5px;
     }
 
     100% {
-        border: solid 2px var(--light-blue);
+        color: var(--light-blue);
+        border: solid .5px var(--light-blue);
     }
 }
 
@@ -257,7 +272,7 @@ nav {
     padding: 1rem;
     border-radius: 10rem;
     border: solid .5px var(--gray-text);
-    transition: all .2s;
+    transition: all .4s;
     position: relative;
     margin: 10vh auto;
     font-size: .7rem;
@@ -265,12 +280,17 @@ nav {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    box-shadow: 0 .3rem .2rem rgba(0, 0, 0, 0.256);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .2rem .1rem rgba(0, 0, 0, 0.256);
+    /* transition: .4s */
 }
 
 .btn-white {
     background-color: var(--dark-blue: rgb(43, 61, 125));
-    color: white;
 }
 
 .btn-animated {
