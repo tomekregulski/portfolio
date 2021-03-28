@@ -166,7 +166,7 @@ nav {
 }
 
 .img-animated {
-    animation: imgFade 12s forwards;
+    animation: imgFade 10s;
 }
 
 @keyframes imgFade {
