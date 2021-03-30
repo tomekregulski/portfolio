@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel ="stylesheet" type="text/css" href="./assets/css/reset.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/card.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/animations.css">
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
@@ -13,15 +14,10 @@
     </head>
     <body>
         <header>
-            <!-- <h1>Tomek Regulski</h1>
-            <div id="subtitle">
-                <span>Full Stack Developer</span>
-            </div> -->
             <h1>
                 TR
             </h1>
             <nav id="header-nav">
-                <!-- <a id="menu">Menu</a> -->
                 <ul id="menu-item">
                     <li><a href="#about-me-new">About Me</a></li>
                     <li id="myWork"><a href="#work">My Work</a></li>
@@ -31,99 +27,81 @@
             </nav>
         </header>
         <main>
-            <section id="about-me">
-                <!-- <h2>
-                    About Me
-                </h2> -->
-                <section id="about-body">
+            <section id="greeting">
+                <section id="greeting-body">
                     <img 
                         src="./assets/images/tomek2.jpg" 
                         data-normal="./assets/images/tomek2.jpg"
                         data-alt="./assets/images/tomek-overlay.png"
                         data-state="normal"
                         alt="Picture of Tomek"
-                        id="profile"
-                        class="img-animated">
-                    <div id="about-text">
+                        id="profile">
+                    <div id="greeting-text">
                         <p id="hi">
                             Hello! I'm Tomek.
                         </p>
                         <p id="intro">
-                            I'm a full stack developer.
+                            I'm a full-stack developer.
                         </p>
-                        <!-- <p>
-                            I' am currently a student at Columbia Engineering's Coding Boot Camp. I am looking forward to leveraging my years of experience in the Natural Food and Beverage, and Performing Arts industries, to create products that provide functionally and elegant solutions to essential tasks. '
-                        </p>
-                        <p>
-                            For now, I am simply working on building up my toolkit. I'll be adding links to projects as a progress, so please come back soon and see what's new!
-                        </p> -->
                     </div>
-                    <a href="#work" class="btn btn-white btn-animated">View my Work</a>
+                    <a href="#work" class="btn">View my Work</a>
                 </section>
             </section>
             <section id="work">
-                <!-- <h2>
-                    My Work
-                </h2> -->
-                <section id="work-body">
-                    <div id="projects">
-                        <div class="card">
-                            <div class="card_side-front">
-                                <img src="assets/images/park-demo.png" class="card_picture-alt">
-                                <h2 class="card_heading">
-                                    <span class="card_heading-span-1">ParkShark NYC</span>
-                                </h2>
-                                <div class="card_details">
-                                    <ul>
-                                        <li>HTML/CSS, JS, Bulma</li>
-                                        <li>Google Maps and NYC Open Data APIs</li>
-                                        <li><a href="https://github.com/tomekregulski/ParkSharkNYC">GitHub Repo</a></li>
-                                        <li><a href="https://tomekregulski.github.io/ParkSharkNYC">Deployed App</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <div class="card">
+                    <div class="card_side-front">
+                        <img src="assets/images/park-demo.png" class="card_picture-alt">
+                        <h2 class="card_heading">
+                            <span class="card_heading-span-1">ParkShark NYC</span>
+                        </h2>
+                        <div class="card_details">
+                            <ul>
+                                <li>HTML/CSS, JS, Bulma</li>
+                                <li>Google Maps and NYC Open Data APIs</li>
+                                <li><a href="https://github.com/tomekregulski/ParkSharkNYC">GitHub Repo</a></li>
+                                <li><a href="https://tomekregulski.github.io/ParkSharkNYC">Deployed App</a></li>
+                            </ul>
                         </div>
-                        <div class="card">
-                            <div class="card_side-front">
-                                <img src="assets/images/weather-demo.png" class="card_picture-alt">
-                                <h4 class="card_heading">
-                                    <span class="card_heading-span-1">Weather Dashboard</span>
-                                </h4>
-                                <div class="card_details">
-                                    <ul>
-                                        <li>HTML/CSS, JS, Bootstrap</li>
-                                        <li>OpenWeather API</li>
-                                        <li><a href="https://github.com/tomekregulski/weather-app">GitHub Repo</a></li>
-                                        <li><a href="https://tomekregulski.github.io/weather-app">Deployed App</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card_side-front">
-                                <img src="assets/images/quiz-demo.png" class="card_picture-alt">
-                                <h4 class="card_heading">
-                                    <span class="card_heading-span-1">Onboarding Quiz App</span>
-                                </h4>
-                                <div class="card_details">
-                                    <ul>
-                                        <li>HTML/CSS, JS, Bootstrap</li>
-                                        <li><a href="https://github.com/tomekregulski/quiz-app">GitHub Repo</a></li>
-                                        <li><a href="https://tomekregulski.github.io/quiz-app">Deployed App</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- projects rendering from JS -->
                     </div>
-                </section>
+                </div>
+                <div class="card">
+                    <div class="card_side-front">
+                        <img src="assets/images/weather-demo.png" class="card_picture-alt">
+                        <h4 class="card_heading">
+                            <span class="card_heading-span-1">Weather Dashboard</span>
+                        </h4>
+                        <div class="card_details">
+                            <ul>
+                                <li>HTML/CSS, JS, Bootstrap</li>
+                                <li>OpenWeather API</li>
+                                <li><a href="https://github.com/tomekregulski/weather-app">GitHub Repo</a></li>
+                                <li><a href="https://tomekregulski.github.io/weather-app">Deployed App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_side-front">
+                        <img src="assets/images/quiz-demo.png" class="card_picture-alt">
+                        <h4 class="card_heading">
+                            <span class="card_heading-span-1">Onboarding Quiz App</span>
+                        </h4>
+                        <div class="card_details">
+                            <ul>
+                                <li>HTML/CSS, JS, Bootstrap</li>
+                                <li><a href="https://github.com/tomekregulski/quiz-app">GitHub Repo</a></li>
+                                <li><a href="https://tomekregulski.github.io/quiz-app">Deployed App</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section id="about-me-new">
+            <section id="about-me">
                 <h2>
                     A little more about me...
                 </h2>
                 <p>
-                    My name is Tomek Regulski. I am a full-stack developer based in Manhattan. In addition to recently completing a coding bootcamp at Columbia University, I have 7+ years experience in CPG, 10+ years experience in the performing arts, and have a life-long dedication to learning. 
+                    My name is Tomek Regulski - I am a full-stack developer based in Manhattan. In addition to recently completing a coding bootcamp at Columbia University, I have 7+ years experience in CPG, and 10+ years experience in the performing arts. 
                 </p>
                 <p>
                     I am passionate about using my newly-developed skills in responsive web design and working with the MERN stack to build apps that provide elegant and intuitive solutions to the task at hand - whether it be faciity operations, getting your message out to the people who need to hear it, or discovering a new park to explore. 
@@ -133,9 +111,6 @@
                 </p>
             </section>
             <section id="contact-me">
-                <!-- <h2>
-                    Contact Me
-                </h2> -->
                 <nav class="bottom-nav">
                     <ul class="social">
                         <li>
@@ -165,8 +140,6 @@
                 <span>Tomek Regulski</span>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="./assets/js/menu.js"></script>
         <script src="https://kit.fontawesome.com/3ba51fa27c.js" crossorigin="anonymous"></script> 
     </body>
 </html>   

@@ -9,26 +9,12 @@
     position: relative;
     margin: 0 auto;
     border-bottom: solid .5px var(--light-blue);
-    /* height: 52rem; */
 }
 .card_side {
     margin: 0 auto;
-    /* height: 52rem; */
-    /* transition: all .8s ease; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: 0; */
-    /* width: 100%; */
-    /* backface-visibility: hidden; */
-    /* border-radius: 3px; */
-    /* overflow: hidden; */
-    /* box-shadow: 0 1.5rem 4rem rgba($color-black, .15); */
 }
 
 .card_side-front {
-    /* background-color: white;
-    border: solid 5px var(-gray-text);
-    margin: 10px 30px; */
     text-align: center;
     max-width: 900px;
 	margin: 0 auto;

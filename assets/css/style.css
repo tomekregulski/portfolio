@@ -41,8 +41,6 @@ h2 {
     font-size: 2em;
     font-weight: 600;
     padding: .2em;
-    /* border-bottom: solid 1px var(--light-blue); */
-    /* border-top: solid 1px var(--light-blue); */
     color: var(--gray-text);
     text-align: center;
 }
@@ -53,15 +51,6 @@ h3 {
 
 /*--------------------------------------*/
 /*---------------Header-----------------*/
-
-header {
-    /* padding: 25px 0 0 0; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* position: relative;     */
-} 
-
 #header-nav {
     position: relative;
     display: flex;
@@ -77,55 +66,33 @@ h1 {
     font-weight: 200;
     color: var(--light-blue);
     opacity: 0.66;
-    /* text-align: center; */
-    /* margin-top: .7em; */
     border: solid .5px var(--light-blue);
     padding: 10px;
     border-radius: 20px;
     position: absolute;
     top: 20px;
-    left: 20px;
-
+    left: 20px
 }
 
 h1:hover {
-    animation: h1Change 4s;
+    animation: h1Change 1.5s ease-in;
 }
-
-/* #subtitle {
-    margin-top: .9em;
-    font-size: 1em;
-    font-weight: 100;
-    text-transform: uppercase;
-    text-align: center;
-} */
 
 nav {
     color: var(--light-blue);
     opacity: 0.66;
 }
 
-/* #menu {
-    cursor: pointer;
-    margin-top: 20px;
-    margin-right: 40px;
-} */
-
 #menu-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 0; */
     overflow: hidden;
     transition: all .2s;
     position: absolute;
     top: 20px;
     right: 20px;
 }
-
-/* #menu-item.open {
-    height: auto;
-} */
 
 #menu-item li {
     padding: 5px 0; 
@@ -144,14 +111,13 @@ nav {
 
 /*--------------------------------------*/
 /*----------------About-----------------*/
-
-#about-me {
+#greeting {
     margin-top: .5em;
     height: 100vh;
     border-bottom: solid .5px var(--light-blue);
 }
 
-#about-body {
+#greeting-body {
     display: flex;
     flex-direction: column;
 }
@@ -164,24 +130,16 @@ nav {
     border-radius: 50%;
     margin: 200px auto 0;
     transition: all .2s ease-in;
-}
-
-.img-animated {
     animation: imgFade 10s;
 }
 
-@keyframes imgFade {
-    0% {
-        opacity: 0;
-    }
+#greeting-text {
+    margin-top: 50px;
+}
 
-    30% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1;
-    }
+#greeting-text p {
+    margin: 10px;
+    text-align: center;
 }
 
 #hi {
@@ -192,85 +150,11 @@ nav {
     animation: moveInBottom 5s;
 }
 
-@keyframes hiSlide {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    80% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* #profile:hover {
-    text-align: center;
-    animation: borderChange 4s;
-} */
-
-@keyframes h1Change {
-    from {
-        color: var(--light-blue);
-        border: solid .5px var(--light-blue);
-    }
-
-    30% {
-        border: solid 2px;
-    }
-
-    50% {
-        color: rgb(177, 85, 174);
-        border: solid .8px rgba(21, 249, 0, 0.276);
-    }
-
-    60% {
-        border: solid .5px;
-    }
-
-    100% {
-        color: var(--light-blue);
-        border: solid .5px var(--light-blue);
-    }
-}
-
-@keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    80% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-#about-text {
-    margin-top: 50px;
-}
-
-#about-text p {
-    margin: 10px;
-    text-align: center;
-    /* animation: aboutSlide 1s; */
-}
-
 .btn {
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    padding: 1rem;
+    padding: .8rem 1rem;
     border-radius: 10rem;
     border: solid .5px var(--gray-text);
     transition: all .4s;
@@ -278,6 +162,7 @@ nav {
     margin: 70px auto;
     font-size: .7rem;
     color: var(--light-blue);
+    animation: moveInBottom 8s;
 }
 
 .btn:hover {
@@ -295,96 +180,10 @@ nav {
     color: var(--light-blue);
 }
 
-/* .btn-white {
-    background-color: var(--dark-blue: rgb(43, 61, 125));
-} */
-
-.btn-animated {
-    animation: moveInBottom 8s;
-}
-
 /*--------------------------------------*/
-/*----------------Work-----------------*/
+/*----------------About-----------------*/
 
-/* #work {
-    margin-top: 1.2em;
-} */
-
-.work-body {
-    display: flex;
-    flex-direction: column;
-    flex: 0 1 auto;
-    /* width: 90%; */
-    /* margin: 0 6%;  */
-}
-
-/* #projects {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 1rem;
-} */
-
-/* this is a weird way to make the last line align to the left when using flex-wrap */
-/* #projects::after {
-	content: "";
-	flex: 1 0 300px;
-	max-width: 300px;
-	height: 0px;
-	margin: 1rem;
-} */
-
-/* .project {
-	flex: 1 0 100%;
-	display: flex;
-	flex-direction: column;
-	max-width: 300px;
-	box-sizing: border-box;
-	margin: 1rem;
-	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-	transition: 0.3s;
-	cursor: pointer;
-} */
-
-/* .project:hover {
-	transform: scale(1.02);
-} */
-
-/* .project h2 {
-	margin: 1rem;
-	font-weight: 400;
-} */
-
-/* .thumbnail {
-	padding-bottom: 100%;
-    width: 100%;
-} */
-
-/* .tags {
-	display: flex;
-	justify-content: flex-end;
-	padding: 1rem;
-} */
-
-/* .tag {
-	padding: 0.5rem;
-	background-color: #207DE9;
-	border-radius: 4px;
-	color: #fff;
-	font-size: 0.8rem;
-	line-height: 1;
-} */
-
-/* add a margin left to any .tag that immediately follows anither .tag */
-/* .tag ~ .tag {
-	margin-left: 0.5rem;
-} */
-
-#about-me-new {
+#about-me {
     border-bottom: solid 2px var(--light-blue);
     text-align: center;
     display: flex;
@@ -395,12 +194,12 @@ nav {
     height: 100vh;
 }
 
-#about-me-new h2 {
+#about-me h2 {
     margin-bottom: 30px;
     font-size: 1.1rem;
 }
 
-#about-me-new p {
+#about-me p {
     margin: 0 5% 10px;
     font-size: .7rem;
 }
@@ -429,7 +228,6 @@ nav {
     font-size: 2rem;
     margin: 0 .4rem;
     transition: all .4s;
-    /* Why can't I use percentages to space these out? */
 }
 
 .social i:hover {
@@ -475,12 +273,12 @@ footer {
         padding-left: 10px;
     }
     
-    #about-me-new h2 {
+    #about-me h2 {
         margin-bottom: 6vh;
         font-size: 1.3rem;
     }
     
-    #about-me-new p {
+    #about-me p {
         margin: 0 5% 3vh;
         font-size: .9rem;
     }
@@ -493,30 +291,9 @@ footer {
         margin: 0 auto;
     } 
 
-    .burger {
-        display: none;
-    }
-
     #myWork {
         display: block;
     }
-
-    /* #header-nav {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        text-align: center;
-        margin-top: 10px;
-    } */
-
-    /* #menu-item {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: flex-end;
-        text-align: center;
-        height: 100%;
-        margin: 15px 0 10px 0;
-    } */
 
     #menu-item li {
         font-size: .6em;
@@ -527,12 +304,12 @@ footer {
 
 @media screen and (min-width: 1000px) {
     
-    #about-me-new h2 {
+    #about-me h2 {
         margin-bottom: 8vh;
         font-size: 1.7rem;
     }
     
-    #about-me-new p {
+    #about-me p {
         margin: 0 15% 5vh;
         font-size: 1.1rem;
     }

@@ -1,0 +1,80 @@
+@keyframes imgFade {
+    0% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hiSlide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes h1Change {
+    from {
+        color: var(--light-blue);
+        border: solid .5px var(--light-blue);
+        padding: 10px;
+    }
+
+    30% {
+        border: solid 2px;
+        padding: 10px;
+        
+    }
+
+    50% {
+        color: rgb(177, 85, 174);
+        border: solid .8px rgba(21, 249, 0, 0.276);
+    }
+
+    60% {
+        border: solid .5px;
+        padding: 8.5px;
+    }
+
+    80% {
+        padding: 10px;
+    }
+
+    100% {
+        color: var(--light-blue);
+        border: solid .5px var(--light-blue);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    80% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
