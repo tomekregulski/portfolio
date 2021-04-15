@@ -1,16 +1,16 @@
 Columbia Coding Boot Camp - Homework 02 - Portfolio
 
-* [Description ](#description)
-* [What I Learned](#what-i-learned)
-* [Installation and Usage](#installation-and-usa)
-* [License](#license)
+- [Description ](#description)
+- [What I Learned](#what-i-learned)
+- [Installation and Usage](#installation-and-use)
+- [License](#license)
 
 ![homepage main](assets/images/demo1.png)
 ![homepage main](assets/images/demo2.png)
 
 # Description
 
-For this assignment I created my portfolio site, which includes a clear title and functional navbar, a recent photo, brief bio, a section to display my work as it becomes available, and contact info. 
+For this assignment I created my portfolio site, which includes a clear title and functional navbar, a recent photo, brief bio, a section to display my work as it becomes available, and contact info.
 
 At the moment, the entire work section is filled with placeholders, as I do not have any completed apps at the moment. I will update this page as I progress through the course, adding new projects as they are completed. Additionally, I plan to regularly make updates to the styling as I gain a firmer understanding of CSS.
 
@@ -24,7 +24,7 @@ I am excited to know that I am now capable of producing an elegant site that is 
 
 # Installation and Use
 
-Clone the repo and open the folder in the code editor of your choice. 
+Clone the repo and open the folder in the code editor of your choice.
 
 # License
 
@@ -49,4 +49,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
