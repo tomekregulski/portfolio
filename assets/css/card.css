@@ -1,100 +1,100 @@
 :root {
-    --white: #fff;
-    --gray-text: #44474a;
-    --dark-blue: rgb(43, 61, 125);
-    --light-blue: rgb(45, 179, 244);
+  --white: #fff;
+  --gray-text: #44474a;
+  --dark-blue: rgb(43, 61, 125);
+  --light-blue: rgb(45, 179, 244);
 }
 
 .card {
-    position: relative;
-    margin: 0 auto;
-    border-bottom: solid .5px var(--light-blue);
+  position: relative;
+  margin: 0 auto;
+  border-bottom: solid 0.5px var(--light-blue);
 }
 .card_side {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .card_side-front {
-    text-align: center;
-    max-width: 900px;
-	margin: 0 auto;
-	padding: 1rem;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-wrapper {
-    border: solid 2px black;
+  border: solid 2px black;
 }
 
 .card_picture-alt {
-    display: block;
-    width: 70%;
-    margin: 20px auto 30px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+  display: block;
+  width: 70%;
+  margin: 20px auto 30px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .card_heading {
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: black;
-    padding-top: 10px;
-    width: 65%;
-    margin: 15px 0 20px;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 10px;
+  width: 65%;
+  margin: 15px 0 20px;
 }
 
 .card_details ul {
-    list-style: none;
-    width: 90%;
+  list-style: none;
+  width: 90%;
 }
 
 .card_details li {
-    text-align: center;
-    font-size: 16px;
-    padding: 1rem;
-    border-top: 1px solid grey;
+  text-align: center;
+  font-size: 16px;
+  padding: 1rem;
+  border-top: 1px solid grey;
 }
 
 .card_details li:last-child {
-    border-bottom: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .card_details a {
-    font-size: 20px;
-    color: var(--light-blue);
+  font-size: 20px;
+  color: var(--light-blue);
 }
 
 .card_details a:visited {
-    color: var(--light-blue);
+  color: var(--light-blue);
 }
 
 .card_details a:hover {
-    animation: colorChange 2s;
+  animation: colorChange 2s;
 }
 
 @keyframes colorChange {
-    0% {
-        color: var(--light-blue);
-    }
+  0% {
+    color: var(--light-blue);
+  }
 
-    50% {
-        color: rgb(177, 85, 174);
-    }
+  50% {
+    color: rgb(177, 85, 174);
+  }
 
-    100% {
-        color: var(--light-blue);
-    }
+  100% {
+    color: var(--light-blue);
+  }
 }
 
 @media screen and (min-width: 600px) {
-    .card_picture-al {
-        width: 60%;
-    }
+  .card_picture-al {
+    width: 60%;
+  }
 }
