@@ -1,225 +1,399 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Tomek Regulski is a full stack web developer based in Manhattan, with extensive experience in CPG and the performing arts. Tomek has built several applications using HTML/CSS, Javascript, Node,js, and MySQL.He is passionate about using technology to provide elegant and intuitive solutions to the task at hand." />
-        <link rel="icon" href="assets/images/tomek_logo.png" />
-        <link rel ="stylesheet" type="text/css" href="./assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="./assets/css/card.css">
-        <link rel="stylesheet" type="text/css" href="./assets/css/animations.css">
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-        <title>Tomek Regulski's Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <h1>
-                TR
-            </h1>
-            <nav id="header-nav">
-                <ul id="menu-item">
-                    <li><a href="#about-me">About Me</a></li>
-                    <li id="myWork"><a href="#work">My Work</a></li>
-                    <li><a href="#contact-me">Contact</a></li>
-                    <li><a href="./assets/images/tomek_regulski_resume.pdf" download="tomek_regulski_resume">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="greeting">
-                <div id="greeting-body">
-                    <img 
-                        src="./assets/images/tomek2.jpg" 
-                        data-normal="./assets/images/tomek2.jpg"
-                        data-alt="./assets/images/tomek-overlay.png"
-                        data-state="normal"
-                        alt="Picture of Tomek"
-                        id="profile">
-                    <div id="greeting-text">
-                        <p id="hi">
-                            Hello! I'm Tomek.
-                        </p>
-                        <p id="intro">
-                            I'm a full-stack developer.
-                        </p>
-                    </div>
-                    <a href="#work" class="btn">View my Work</a>
-                </div>
-            </section>
-            <section id="work">
-                <div class="card">
-                    <div class="card_side-front">
-                        <img src="assets/images/yup2.png" class="card_picture-alt" alt="Yup banner">
-                        <h2 class="card_heading">
-                            <span class="card_heading-span-1">Yup!</span>
-                        </h2>
-                        <div class="card_details">
-                            <ul>
-                                <li>HTML/CSS, JS, Bootsrap, Handlebars</li>
-                                <li>Node.js/Express, MySQL/Sequelize, Cloudinary, Streamifier, Multer</li>
-                                <li>Google Maps and NYC Open Data APIs</li>
-                                <li>
-                                    <a href="https://github.com/tomekregulski/yup-schlepp" rel="noopener" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://guarded-atoll-77888.herokuapp.com/login" rel="noopener" target="_blank">
-                                        Deployed App
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_side-front">
-                        <img src="assets/images/park-demo.png" class="card_picture-alt" alt="ParkShark NYC banner">
-                        <h2 class="card_heading">
-                            <span class="card_heading-span-1">ParkShark NYC</span>
-                        </h2>
-                        <div class="card_details">
-                            <ul>
-                                <li>HTML/CSS, JS, Bulma</li>
-                                <li>Leaflet.js and NYC Open Data APIs</li>
-                                <li>
-                                    <a href="https://github.com/tomekregulski/ParkSharkNYC" rel="noopener" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://tomekregulski.github.io/ParkSharkNYC" rel="noopener" target="_blank">
-                                        Deployed App
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_side-front">
-                        <img src="assets/images/iterable-demo.png" class="card_picture-alt" alt="iterable banner">
-                        <h2 class="card_heading">
-                            <span class="card_heading-span-1">iterable</span>
-                        </h2>
-                        <div class="card_details">
-                            <ul>
-                                <li>HTML/CSS, JS, Bootstrap, Handlebars</li>
-                                <li>Node.js/Express, MySQL/Sequelize</li>
-                                <li>
-                                    <a href="https://github.com/tomekregulski/iterable" rel="noopener" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://evening-depths-19981.herokuapp.com/" rel="noopener" target="_blank">
-                                        Deployed App
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_side-front">
-                        <img src="assets/images/weather-demo.png" class="card_picture-alt" alt="Weather Dashboard banner">
-                        <h2 class="card_heading">
-                            <span class="card_heading-span-1">Weather Dashboard</span>
-                        </h2>
-                        <div class="card_details">
-                            <ul>
-                                <li>Progressive Web App</li>
-                                <li>HTML/CSS, JS, Bootstrap</li>
-                                <li>OpenWeather API</li>
-                                <li>
-                                    <a href="https://github.com/tomekregulski/weather-app" rel="noopener" target="_blank">
-                                        GitHub Repo
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://tomekregulski.github.io/weather-app" rel="noopener" target="_blank">
-                                        Deployed App
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card_side-front">
-                        <img src="assets/images/quiz-demo.png" class="card_picture-alt" alt="Quiz App banner">
-                        <h2 class="card_heading">
-                            <span class="card_heading-span-1">Onboarding Quiz App</span>
-                        </h2>
-                        <div class="card_details">
-                            <ul>
-                                <li>HTML/CSS, JS, Bootstrap</li>
-                                <li><a href="https://github.com/tomekregulski/quiz-app" rel="noopener" target="_blank">GitHub Repo</a></li>
-                                <li><a href="https://tomekregulski.github.io/quiz-app" rel="noopener" target="_blank">Deployed App</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="about-me">
-                <h2>
-                    A little more about me...
-                </h2>
-                <p>
-                    My name is Tomek Regulski - I am a full-stack developer based in Manhattan. In addition to recently completing a coding bootcamp at Columbia University, I have 7+ years experience in CPG, and 10+ years experience in the performing arts. 
-                </p>
-                <p>
-                    I am passionate about using my newly-developed skills in responsive web design and working with the MERN stack to build apps that provide elegant and intuitive solutions to the task at hand - whether it be facility operations, getting your message out to the people who need to hear it, or discovering a new park to explore. 
-                </p>
-                <p>
-                    When I'm not coding, there is a good chance that I am working on my music, out for a stroll, or trying out a new recipe in the kitchen.  
-                </p>
-            </section>
-            <section id="contact-me">
-                <nav class="bottom-nav">
-                    <ul class="social">
-                        <li>
-                            <a class="fontawesome" href="https://www.linkedin.com/in/tomek-regulski-867153130/" target="_blank" rel="noopener" role="navigation" aria-label="link to LinkedIn">
-                                <span style="font-size: 2em; color: rgb(45, 179, 244);">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="fontawesome" href="https://github.com/tomekregulski" target="_blank" rel="noopener" role="navigation" aria-label="link to GitHub">
-                                <span style="font-size: 2em; color: rgb(45, 179, 244);">
-                                    <i class="fab fa-github"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="fontawesome" href="mailto: tomek@resonantmc.com" target="_blank" rel="noopener" role="navigation" aria-label="link to Email">
-                                <span style="font-size: 2em; color: rgb(45, 179, 244);">
-                                    <i class="fas fa-envelope-square"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="fontawesome" href="https://www.facebook.com/tomek.regulski" target="_blank" rel="noopener" role="navigation" aria-label="link to Facebook">
-                                <span style="font-size: 2em; color: rgb(45, 179, 244);">
-                                    <i class="fab fa-facebook"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
-        </main>
-        <footer>
-            <div id="copyright">
-                <span>&copy; Copyright 2021</span>
-                <span>Tomek Regulski</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tomek Regulski is a full stack web developer based in Manhattan, with extensive experience in CPG and the performing arts. Tomek has built several applications using HTML/CSS, Javascript, Node,js, and MySQL.He is passionate about using technology to provide elegant and intuitive solutions to the task at hand."
+    />
+    <link rel="icon" href="assets/images/tomek_logo.png" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/card.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/animations.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tomek Regulski's Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>TR</h1>
+      <nav id="header-nav">
+        <ul id="menu-item">
+          <li><a href="#about-me">About Me</a></li>
+          <li id="myWork"><a href="#work">My Work</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+          <li>
+            <a
+              href="./assets/images/tomek_regulski_resume.pdf"
+              download="tomek_regulski_resume"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="greeting">
+        <div id="greeting-body">
+          <img
+            src="./assets/images/tomek2.jpg"
+            data-normal="./assets/images/tomek2.jpg"
+            data-alt="./assets/images/tomek-overlay.png"
+            data-state="normal"
+            alt="Picture of Tomek"
+            id="profile"
+          />
+          <div id="greeting-text">
+            <p id="hi">Hello! I'm Tomek.</p>
+            <p id="intro">I'm a full-stack developer.</p>
+          </div>
+          <a href="#work" class="btn">View my Work</a>
+        </div>
+      </section>
+      <section id="work">
+        <div class="card">
+          <div class="card_side-front">
+            <img
+              src="assets/images/fieldist_demo.png"
+              class="card_picture-alt"
+              alt="Yup banner"
+            />
+            <h2 class="card_heading">
+              <span class="card_heading-span-1">Fieldist</span>
+            </h2>
+            <div class="card_details">
+              <ul>
+                <li>
+                  A platform for field marketing agencies to assist the
+                  management of both their field team and clients.
+                </li>
+                <li>HTML/CSS, React, Bootstrap, Cloudinary</li>
+                <li>Node.js/Express, MySQL/Sequelize, JWT, Bcrypt</li>
+                <li>
+                  Google Maps/Places, Re-Charts, React Table, React Dropzone
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/tomekregulski/fieldist"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    GitHub Repo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://secret-wave-01417.herokuapp.com"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </li>
+              </ul>
             </div>
-        </footer>
-        <script src="https://kit.fontawesome.com/3ba51fa27c.js" crossorigin="anonymous"></script> 
-    </body>
-</html>   
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_side-front">
+            <img
+              src="assets/images/yup2.png"
+              class="card_picture-alt"
+              alt="Yup banner"
+            />
+            <h2 class="card_heading">
+              <span class="card_heading-span-1">Yup!</span>
+            </h2>
+            <div class="card_details">
+              <ul>
+                <li>
+                  A platform developed for Yup! Realty to manage their inventory
+                  and allow agents to access information from the field.
+                </li>
+                <li>HTML/CSS, JS, Bootsrap, Handlebars</li>
+                <li>
+                  Node.js/Express, MySQL/Sequelize, Cloudinary, Streamifier,
+                  Multer
+                </li>
+                <li>Google Maps and NYC Open Data APIs</li>
+                <li>
+                  <a
+                    href="https://github.com/tomekregulski/yup-schlepp"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    GitHub Repo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://guarded-atoll-77888.herokuapp.com/login"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_side-front">
+            <img
+              src="assets/images/park-demo.png"
+              class="card_picture-alt"
+              alt="ParkShark NYC banner"
+            />
+            <h2 class="card_heading">
+              <span class="card_heading-span-1">ParkShark NYC</span>
+            </h2>
+            <div class="card_details">
+              <ul>
+                <li>
+                  An app allowing NYC park lovers to find information on nearby
+                  parks and keep a journal of their experiences.
+                </li>
+                <li>HTML/CSS, JS, Bulma</li>
+                <li>Leaflet.js and NYC Open Data APIs</li>
+                <li>
+                  <a
+                    href="https://github.com/tomekregulski/ParkSharkNYC"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    GitHub Repo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://tomekregulski.github.io/ParkSharkNYC"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_side-front">
+            <img
+              src="assets/images/iterable-demo.png"
+              class="card_picture-alt"
+              alt="iterable banner"
+            />
+            <h2 class="card_heading">
+              <span class="card_heading-span-1">iterable</span>
+            </h2>
+            <div class="card_details">
+              <ul>
+                <li>
+                  A simple blog site allowing users to sign up, post their own
+                  content, as well as engage with others.
+                </li>
+                <li>HTML/CSS, JS, Bootstrap, Handlebars</li>
+                <li>Node.js/Express, MySQL/Sequelize</li>
+                <li>
+                  <a
+                    href="https://github.com/tomekregulski/iterable"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    GitHub Repo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://evening-depths-19981.herokuapp.com/"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_side-front">
+            <img
+              src="assets/images/weather-demo.png"
+              class="card_picture-alt"
+              alt="Weather Dashboard banner"
+            />
+            <h2 class="card_heading">
+              <span class="card_heading-span-1">Weather Dashboard</span>
+            </h2>
+            <div class="card_details">
+              <ul>
+                <li>
+                  Progressive web app offerings a simple weather dashboard -
+                  search by city to see the current weather and 5-day forecast.
+                </li>
+                <li>HTML/CSS, JS</li>
+                <li>Bootstrap, OpenWeather API</li>
+                <li>
+                  <a
+                    href="https://github.com/tomekregulski/weather-app"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    GitHub Repo
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://tomekregulski.github.io/weather-app"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    Deployed App
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card_side-front">
+            <img
+              src="assets/images/quiz-demo.png"
+              class="card_picture-alt"
+              alt="Company Directory banner"
+            />
+            <h2 class="card_heading">
+              <span class="card_heading-span-1">Company Directory</span>
+            </h2>
+            <div class="card_details">
+              <ul>
+                <li>
+                  A table that dynamically loads a company roster and displays
+                  public information for each employee.
+                </li>
+                <li>HTML/CSS, JS, React, Bootstrap</li>
+                <li>
+                  <a
+                    href="https://github.com/tomekregulski/company_directory"
+                    rel="noopener"
+                    target="_blank"
+                    >GitHub Repo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://tomekregulski.github.io/company_directory"
+                    rel="noopener"
+                    target="_blank"
+                    >Deployed App</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-me">
+        <h2>A little more about me...</h2>
+        <p>
+          My name is Tomek Regulski - I am a full-stack developer based in
+          Manhattan. In addition to recently completing a coding bootcamp at
+          Columbia University, I have 7+ years experience in CPG, and 10+ years
+          experience in the performing arts.
+        </p>
+        <p>
+          I am passionate about using my newly-developed skills in responsive
+          web design, Javascript, SQL, and React to build apps that provide
+          elegant and intuitive solutions to the task at hand - whether it be
+          business operations, connecting with like-minded people, or
+          discovering a new park to explore.
+        </p>
+        <p>
+          When I'm not coding, there is a good chance that I am working on my
+          music, out for a stroll, or trying out a new recipe in the kitchen.
+        </p>
+      </section>
+      <section id="contact-me">
+        <nav class="bottom-nav">
+          <ul class="social">
+            <li>
+              <a
+                class="fontawesome"
+                href="https://www.linkedin.com/in/tomek-regulski-867153130/"
+                target="_blank"
+                rel="noopener"
+                role="navigation"
+                aria-label="link to LinkedIn"
+              >
+                <span style="font-size: 2em; color: rgb(45, 179, 244)">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="fontawesome"
+                href="https://github.com/tomekregulski"
+                target="_blank"
+                rel="noopener"
+                role="navigation"
+                aria-label="link to GitHub"
+              >
+                <span style="font-size: 2em; color: rgb(45, 179, 244)">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="fontawesome"
+                href="mailto: tomek@resonantmc.com"
+                target="_blank"
+                rel="noopener"
+                role="navigation"
+                aria-label="link to Email"
+              >
+                <span style="font-size: 2em; color: rgb(45, 179, 244)">
+                  <i class="fas fa-envelope-square"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="fontawesome"
+                href="https://www.facebook.com/tomek.regulski"
+                target="_blank"
+                rel="noopener"
+                role="navigation"
+                aria-label="link to Facebook"
+              >
+                <span style="font-size: 2em; color: rgb(45, 179, 244)">
+                  <i class="fab fa-facebook"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <footer>
+      <div id="copyright">
+        <span>&copy; Copyright 2021</span>
+        <span>Tomek Regulski | tomek.regulski@gmail.com</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/3ba51fa27c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
